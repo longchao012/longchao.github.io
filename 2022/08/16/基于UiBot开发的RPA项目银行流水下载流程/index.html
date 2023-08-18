@@ -6,21 +6,21 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://longchao012.github.io">
-  <title>我们应该从哪些方面思考公司场景是否适合RPA流程自动化 | Hexo</title>
+  <title>基于UiBot开发的RPA项目各类银行操作流程(银行流水下载、自动填写付款单等) | Hexo</title>
   <meta name="generator" content="hexo-theme-yilia-plus">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-  <meta name="description" content="随着科技的发展，RPA（Robotic Process Automation）流程自动化已经成为企业提升效率，降低成本的重要工具。我们需要理解RPA的基本概念和特性。RPA是一种可以模拟和复制人类在应用程序中执行的重复任务的技术，它可以24&#x2F;7不间断工作，不需要休息，也不需要假期。这种特性使得RPA非常适合处理大量的、重复的、规则化的任务。那么那些场景或需求合适使用自动化呢？">
+  <meta name="description" content="基于UiBot开发的RPA项目银行流水下载流程做过很多关于银行相关的RPA项目，本次主要以UIBot这个工具来实施的银行相关RPA项目。使用的UiBot Creator 5.6的版本，后续更新为6.0版本。涉及的银行有中国银行，工商银行，民生银行，光大银行，农业银行等多少银行。有通过C&#x2F;S访问的，也有通过B&#x2F;S访问的。客户方面都没有做太多的限制，能满足业务需要即可。开发的周期，">
 <meta property="og:type" content="article">
-<meta property="og:title" content="我们应该从哪些方面思考公司场景是否适合RPA流程自动化">
-<meta property="og:url" content="https://longchao012.github.io/2022/07/16/%E6%88%91%E4%BB%AC%E5%BA%94%E8%AF%A5%E4%BB%8E%E5%93%AA%E4%BA%9B%E6%96%B9%E9%9D%A2%E6%80%9D%E8%80%83%E5%85%AC%E5%8F%B8%E5%9C%BA%E6%99%AF%E6%98%AF%E5%90%A6%E9%80%82%E5%90%88RPA%E6%B5%81%E7%A8%8B%E8%87%AA%E5%8A%A8%E5%8C%96/index.html">
+<meta property="og:title" content="基于UiBot开发的RPA项目各类银行操作流程(银行流水下载、自动填写付款单等)">
+<meta property="og:url" content="https://longchao012.github.io/2022/08/16/%E5%9F%BA%E4%BA%8EUiBot%E5%BC%80%E5%8F%91%E7%9A%84RPA%E9%A1%B9%E7%9B%AE%E9%93%B6%E8%A1%8C%E6%B5%81%E6%B0%B4%E4%B8%8B%E8%BD%BD%E6%B5%81%E7%A8%8B/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="随着科技的发展，RPA（Robotic Process Automation）流程自动化已经成为企业提升效率，降低成本的重要工具。我们需要理解RPA的基本概念和特性。RPA是一种可以模拟和复制人类在应用程序中执行的重复任务的技术，它可以24&#x2F;7不间断工作，不需要休息，也不需要假期。这种特性使得RPA非常适合处理大量的、重复的、规则化的任务。那么那些场景或需求合适使用自动化呢？">
+<meta property="og:description" content="基于UiBot开发的RPA项目银行流水下载流程做过很多关于银行相关的RPA项目，本次主要以UIBot这个工具来实施的银行相关RPA项目。使用的UiBot Creator 5.6的版本，后续更新为6.0版本。涉及的银行有中国银行，工商银行，民生银行，光大银行，农业银行等多少银行。有通过C&#x2F;S访问的，也有通过B&#x2F;S访问的。客户方面都没有做太多的限制，能满足业务需要即可。开发的周期，">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2022-07-16T07:23:41.000Z">
-<meta property="article:modified_time" content="2023-08-18T01:51:44.655Z">
+<meta property="article:published_time" content="2022-08-16T02:10:22.000Z">
+<meta property="article:modified_time" content="2023-08-18T01:52:10.622Z">
 <meta property="article:author" content="龙超小站">
-<meta property="article:tag" content="RPA、Python、办公自动化">
+<meta property="article:tag" content="RPA、银行、办公自动化">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
@@ -206,14 +206,14 @@
               class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-我们应该从哪些方面思考公司场景是否适合RPA流程自动化" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-基于UiBot开发的RPA项目银行流水下载流程" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
   
   
     <h1 class="article-title" itemprop="name">
-      我们应该从哪些方面思考公司场景是否适合RPA流程自动化
+      基于UiBot开发的RPA项目各类银行操作流程(银行流水下载、自动填写付款单等)
     </h1>
   
 
@@ -225,8 +225,8 @@
               <i class="icon-smile icon"></i> 阅读数：<span id="busuanzi_value_page_pv"></span>次
         </span>
 
-<a href="/2022/07/16/%E6%88%91%E4%BB%AC%E5%BA%94%E8%AF%A5%E4%BB%8E%E5%93%AA%E4%BA%9B%E6%96%B9%E9%9D%A2%E6%80%9D%E8%80%83%E5%85%AC%E5%8F%B8%E5%9C%BA%E6%99%AF%E6%98%AF%E5%90%A6%E9%80%82%E5%90%88RPA%E6%B5%81%E7%A8%8B%E8%87%AA%E5%8A%A8%E5%8C%96/" class="archive-article-date">
-        <time datetime="2022-07-16T07:23:41.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-07-16</time>
+<a href="/2022/08/16/%E5%9F%BA%E4%BA%8EUiBot%E5%BC%80%E5%8F%91%E7%9A%84RPA%E9%A1%B9%E7%9B%AE%E9%93%B6%E8%A1%8C%E6%B5%81%E6%B0%B4%E4%B8%8B%E8%BD%BD%E6%B5%81%E7%A8%8B/" class="archive-article-date">
+        <time datetime="2022-08-16T02:10:22.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-08-16</time>
 </a>
 
   
@@ -239,7 +239,7 @@
       <!-- 百度字体平台:http://fontstore.baidu.com/static/editor/index.html -->
       <i class="icon-statistics"></i>
       <span class="post-meta-item-text"> 字数统计:</span>
-      <span class="post-count">1k字</span>
+      <span class="post-count">980字</span>
     </span>
   </span>
 
@@ -259,23 +259,13 @@
   
   <div class="article-entry" itemprop="articleBody">
     
-    <p>随着科技的发展，RPA（Robotic Process Automation）流程自动化已经成为企业提升效率，降低成本的重要工具。我们需要理解RPA的基本概念和特性。RPA是一种可以模拟和复制人类在应用程序中执行的重复任务的技术，它可以24&#x2F;7不间断工作，不需要休息，也不需要假期。这种特性使得RPA非常适合处理大量的、重复的、规则化的任务。<br>那么那些场景或需求合适使用自动化呢？</p>
+    <p>基于UiBot开发的RPA项目银行流水下载流程<br>做过很多关于银行相关的RPA项目，本次主要以UIBot这个工具来实施的银行相关RPA项目。使用的UiBot Creator 5.6的版本，后续更新为6.0版本。涉及的银行有中国银行，工商银行，民生银行，光大银行，农业银行等多少银行。有通过C&#x2F;S访问的，也有通过B&#x2F;S访问的。客户方面都没有做太多的限制，能满足业务需要即可。开发的周期，看业务需求的范围与数据结构的复杂度。如果有对账，数据转换等需求的项目可能时间会相对长一点，如果只是单纯的下载流水或填写付款单等待，那基本会很快，时间可以控制在一到两周以内。<br>目前为止。接受到的需求主要有以下几种：<br>1.流水查询(一般会跟着有有自动对账需求)<br>2.付款单填写<br>总体来说，就是资金的借与贷的变化。除此无它！</p>
+<p>那么我们开发的过程中可能会遇到什么问题呢？</p>
 <span id="more"></span>)
-
-<h2 id="流程适合性"><a href="#流程适合性" class="headerlink" title="流程适合性"></a>流程适合性</h2><p>您可以使用以下标准评估流程是否适合自动化：</p>
-<h3 id="基于规则"><a href="#基于规则" class="headerlink" title="基于规则"></a>基于规则</h3><p>可通过预定义逻辑捕获在流程中做出的决策（包括数据解释）。这样带来的结果是，异常率要么很低，要么包含在业务逻辑中。</p>
-<h3 id="可自动化和-或重复性流程"><a href="#可自动化和-或重复性流程" class="headerlink" title="可自动化和&#x2F;或重复性流程"></a>可自动化和&#x2F;或重复性流程</h3><p>我们可以区分4种类型的流程：<br>手动非重复性流程：由人工执行且每次执行该流程时都有不同的流程步骤<br>手动重复性流程：由用户执行，并且每次至少有部分相同的流程步骤<br>半自动化重复性流程：其中一些重复的步骤已经实现自动化（使用宏、Outlook 规则等）<br>自动化流程：已使用除 RPA 之外的其他技术实现自动化的流程<br>由于异常率高或无法集成到业务逻辑中的因素，仍然需要手动执行或非重复性的流程并非自动化的理想选择。</p>
-<h3 id="标准输入"><a href="#标准输入" class="headerlink" title="标准输入"></a>标准输入</h3><p>流程中的输入应采用电子形式且易于读取，或者可以使用与 RPA 相关的技术（例如 OCR）进行读取。预定义字段的发票就是很好的例子。</p>
-<h3 id="稳定"><a href="#稳定" class="headerlink" title="稳定"></a>稳定</h3><p>在一定时期内相同且在接下来的几个月内预计不会发生任何变化的流程适合自动化，前提是它们也符合另一个标准。</p>
-<h2 id="自动化的复杂性"><a href="#自动化的复杂性" class="headerlink" title="自动化的复杂性"></a>自动化的复杂性</h2><p>这套标准用于确定实现流程自动化的难度：</p>
-<h3 id="界面数量"><a href="#界面数量" class="headerlink" title="界面数量"></a>界面数量</h3><p>RPA的工作原理是，通过对机器人进行编程，使其可以在界面级别执行任务（当界面更改时，机器人必须学习逻辑）。界面数量越多，在实现流程自动化之前必须捕获和配置的元素就越多。</p>
-<h3 id="应用程序的类型"><a href="#应用程序的类型" class="headerlink" title="应用程序的类型"></a>应用程序的类型</h3><p>有些应用程序较易实现自动化（例如 Office套件或浏览器），而有些则需要大量工作才能实现自动化（例如大型机）。随着应用程序的差异越大，界面数量也会随之增加（参见上一点）。</p>
-<h3 id="业务逻辑场景"><a href="#业务逻辑场景" class="headerlink" title="业务逻辑场景"></a>业务逻辑场景</h3><p>自动化的复杂性随着业务逻辑中决策点的数量而增加。基本上，每个决策点乘二即可得出场景数量。</p>
-<h3 id="输入的类型和数量"><a href="#输入的类型和数量" class="headerlink" title="输入的类型和数量"></a>输入的类型和数量</h3><p>如前所述，需要使用标准输入。但在某些情况下，必须为将受到自动化影响的所有供应商配置一个标准输入（例如发票）。此外，非标准输入可以分为不同的复杂性等级，其中自由文本是最复杂的。</p>
-<h2 id="评估自动化潜力"><a href="#评估自动化潜力" class="headerlink" title="评估自动化潜力"></a>评估自动化潜力</h2><h3 id="不使用RPA"><a href="#不使用RPA" class="headerlink" title="不使用RPA"></a>不使用RPA</h3><p>频繁变化、系统环境多变且需要执行多个手动（甚至非数字）操作的流程。</p>
-<h3 id="半自动化"><a href="#半自动化" class="headerlink" title="半自动化"></a>半自动化</h3><p>可以分解为可明确自动化的步骤和仍需手动执行的步骤（例如验证或使用物理安全性令牌）的流程。</p>
-<h3 id="高成本RPA"><a href="#高成本RPA" class="headerlink" title="高成本RPA"></a>高成本RPA</h3><p>数字化程度较高并且可以实现自动化的流程，但需要使用一些复杂的技术（例如 OCR）或需要具备高级编程技能。</p>
-<h3 id="零接触自动化"><a href="#零接触自动化" class="headerlink" title="零接触自动化"></a>零接触自动化</h3><p>涉及高度静态的系统和流程环境的数字化流程，这些流程很容易就能分解为指令并且可以定义简单的触发器。</p>
+<h2 id="开发过程中可能会遇到的问题"><a href="#开发过程中可能会遇到的问题" class="headerlink" title="开发过程中可能会遇到的问题"></a>开发过程中可能会遇到的问题</h2><h3 id="安全性问题"><a href="#安全性问题" class="headerlink" title="安全性问题"></a>安全性问题</h3><p>做银行相关的项目，其中最重要的也是客户最关心的就是安全性问题，就以目前的项目来说，安全性其它不太用顾虑。因为如果是查流水，没有太多的资金的上担忧，只是简单的查。而且数据也不是那么容易泄漏的，主要是有三个方面的防护<br>1.物理性的防护，通过保护电脑与主机还有Ukey(主要)，在使用的时候才插入Ukey即可。<br>2.登录密码的防护，可以把密码写入到Window的凭证中，通过UiBot内置的组件来读取，开发人员也不知道这个密码是什么。<br>3.严密的保存交易密码。RPA流程不会涉及到交易密码，也不建议把交易密码暴露出来让RPA机器人使用。</p>
+<h3 id="需求中的问题"><a href="#需求中的问题" class="headerlink" title="需求中的问题"></a>需求中的问题</h3><p>主要是个别客户的对账的过程复杂，需要考虑的因素特别多，对账时候的数据非标准数据，需要很多的数据转换。这其中的过程遇到很多的困难。<br>同时，有时候客户自身对需求的细节也会判定不足，导致开发过程中进行不下去，项目周末延长。</p>
+<h3 id="银行系统的限制问题"><a href="#银行系统的限制问题" class="headerlink" title="银行系统的限制问题"></a>银行系统的限制问题</h3><p>银行系统会监测你的行为还有不允许有远程之类的操作。不能让远程控制输入密码。可以调用驱动级的键盘输入解决问题。部分银行的系统的C&#x2F;S端元素的布局是比较混乱的，元素明明在A点，坐标却是偏到了天边的B点，而很多的控件或元素都是无法获取到对应的元素坐标。不知道是出于安全还是其它方面的考虑。这个没有太好的解决办法，只能一点点的适配与调节。而相比B&#x2F;S端这种情况就会好很多，但是很多客户的电脑配置都不太好，而且银行对浏览器的支持也是强差人意。只能根据每个客户做相对应的调整与配置。</p>
+<h3 id="现场运行环境问题"><a href="#现场运行环境问题" class="headerlink" title="现场运行环境问题"></a>现场运行环境问题</h3><p>环境问题大部分是性能问题，有的客户的电脑是很破旧的电脑，有的客户的电脑还运行着Windows7或Windows XP。实在是太难啦。这个没什么解决的办法，只能尽量的沟通协调，不行就让RPA流程慢下来，通过不断的试错慢慢的适配比较差的电脑环境。</p>
 
     
 
@@ -292,7 +282,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">RPA、Python、办公自动化</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">RPA、银行、办公自动化</a>
         		</li>
       		
 		</ul>
@@ -348,7 +338,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-     <!-- <img src="//pan.baidu.com/share/qrcode?url=https://longchao012.github.io/2022/07/16/%E6%88%91%E4%BB%AC%E5%BA%94%E8%AF%A5%E4%BB%8E%E5%93%AA%E4%BA%9B%E6%96%B9%E9%9D%A2%E6%80%9D%E8%80%83%E5%85%AC%E5%8F%B8%E5%9C%BA%E6%99%AF%E6%98%AF%E5%90%A6%E9%80%82%E5%90%88RPA%E6%B5%81%E7%A8%8B%E8%87%AA%E5%8A%A8%E5%8C%96/" alt="微信分享二维码"> -->
+     <!-- <img src="//pan.baidu.com/share/qrcode?url=https://longchao012.github.io/2022/08/16/%E5%9F%BA%E4%BA%8EUiBot%E5%BC%80%E5%8F%91%E7%9A%84RPA%E9%A1%B9%E7%9B%AE%E9%93%B6%E8%A1%8C%E6%B5%81%E6%B0%B4%E4%B8%8B%E8%BD%BD%E6%B5%81%E7%A8%8B/" alt="微信分享二维码"> -->
     </div>
 </div>
 
@@ -363,18 +353,9 @@
 
 <nav id="article-nav">
   
-    <a href="/2022/08/16/%E5%9F%BA%E4%BA%8EUiBot%E5%BC%80%E5%8F%91%E7%9A%84RPA%E9%A1%B9%E7%9B%AE%E9%93%B6%E8%A1%8C%E6%B5%81%E6%B0%B4%E4%B8%8B%E8%BD%BD%E6%B5%81%E7%A8%8B/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          基于UiBot开发的RPA项目各类银行操作流程(银行流水下载、自动填写付款单等)
-        
-      </div>
-    </a>
   
-  
-    <a href="/2022/07/15/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Hello World For LongChao</div>
+    <a href="/2022/07/16/%E6%88%91%E4%BB%AC%E5%BA%94%E8%AF%A5%E4%BB%8E%E5%93%AA%E4%BA%9B%E6%96%B9%E9%9D%A2%E6%80%9D%E8%80%83%E5%85%AC%E5%8F%B8%E5%9C%BA%E6%99%AF%E6%98%AF%E5%90%A6%E9%80%82%E5%90%88RPA%E6%B5%81%E7%A8%8B%E8%87%AA%E5%8A%A8%E5%8C%96/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">我们应该从哪些方面思考公司场景是否适合RPA流程自动化</div>
       <i class="icon-circle-right"></i>
     </a>
   
