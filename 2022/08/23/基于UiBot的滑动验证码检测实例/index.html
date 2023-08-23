@@ -6,19 +6,29 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://longchao012.github.io">
-  <title>Archives: 2022/8 | Hexo</title>
+  <title>基于UiBot的滑动验证码检测实例 | Hexo</title>
   <meta name="generator" content="hexo-theme-yilia-plus">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-  <meta name="description" content="欢迎来到小站！技术是第一生产力">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="https://longchao012.github.io/archives/2022/08/index.html">
+  <meta name="description" content="我们在做一些自动化登录的过程中，经常会遇到各种各样的图灵检测。因为验证码样式多变，而且需要较多命令组合才能完成验证，所以UiBot暂时没有将验证码做为一个命令组件进行预制。难到这样就没办法了吗？">
+<meta property="og:type" content="article">
+<meta property="og:title" content="基于UiBot的滑动验证码检测实例">
+<meta property="og:url" content="https://longchao012.github.io/2022/08/23/%E5%9F%BA%E4%BA%8EUiBot%E7%9A%84%E6%BB%91%E5%8A%A8%E9%AA%8C%E8%AF%81%E7%A0%81%E6%A3%80%E6%B5%8B%E5%AE%9E%E4%BE%8B/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="欢迎来到小站！技术是第一生产力">
+<meta property="og:description" content="我们在做一些自动化登录的过程中，经常会遇到各种各样的图灵检测。因为验证码样式多变，而且需要较多命令组合才能完成验证，所以UiBot暂时没有将验证码做为一个命令组件进行预制。难到这样就没办法了吗？">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://longchao012.github.io/images/%E6%BB%91%E5%9D%97%E9%AA%8C%E8%AF%811.png">
+<meta property="og:image" content="https://longchao012.github.io/images/%E6%BB%91%E5%9D%97%E9%AA%8C%E8%AF%812.png">
+<meta property="og:image" content="https://longchao012.github.io/images/%E6%BB%91%E5%9D%97%E9%AA%8C%E8%AF%813.png">
+<meta property="og:image" content="https://longchao012.github.io/images/%E6%BB%91%E5%9D%97%E9%AA%8C%E8%AF%814.png">
+<meta property="og:image" content="https://longchao012.github.io/images/%E6%BB%91%E5%9D%97%E9%AA%8C%E8%AF%815.png">
+<meta property="og:image" content="https://longchao012.github.io/images/%E6%BB%91%E5%9D%97%E9%AA%8C%E8%AF%816.png">
+<meta property="article:published_time" content="2022-08-23T09:59:20.000Z">
+<meta property="article:modified_time" content="2023-08-23T10:14:25.837Z">
 <meta property="article:author" content="龙超小站">
+<meta property="article:tag" content="RPA">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://longchao012.github.io/images/%E6%BB%91%E5%9D%97%E9%AA%8C%E8%AF%811.png">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -203,41 +213,104 @@
               class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-基于UiBot的滑动验证码检测实例" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2022" class="archive-year">2022</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2022/08/23/%E5%9F%BA%E4%BA%8EUiBot%E7%9A%84%E6%BB%91%E5%8A%A8%E9%AA%8C%E8%AF%81%E7%A0%81%E6%A3%80%E6%B5%8B%E5%AE%9E%E4%BE%8B/" class="archive-article-date">
-        <time datetime="2022-08-23T09:59:20.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-08-23</time>
-</a>
-
-        </div>
-    	 
+      <header class="article-header">
   
-    <h1 itemprop="name">
-	
-	  <a class="archive-article-title" href="/2022/08/23/%E5%9F%BA%E4%BA%8EUiBot%E7%9A%84%E6%BB%91%E5%8A%A8%E9%AA%8C%E8%AF%81%E7%A0%81%E6%A3%80%E6%B5%8B%E5%AE%9E%E4%BE%8B/" target="_blank">基于UiBot的滑动验证码检测实例</a>
   
+    <h1 class="article-title" itemprop="name">
+      基于UiBot的滑动验证码检测实例
     </h1>
   
 
 
-        <div class="article-info info-on-right">
-          
+  
+  
+        
+        <span id="busuanzi_container_page_pv" style='display:none' class="archive-article-date">
+              <i class="icon-smile icon"></i> 阅读数：<span id="busuanzi_value_page_pv"></span>次
+        </span>
+
+<a href="/2022/08/23/%E5%9F%BA%E4%BA%8EUiBot%E7%9A%84%E6%BB%91%E5%8A%A8%E9%AA%8C%E8%AF%81%E7%A0%81%E6%A3%80%E6%B5%8B%E5%AE%9E%E4%BE%8B/" class="archive-article-date">
+        <time datetime="2022-08-23T09:59:20.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-08-23</time>
+</a>
+
+  
+  
+    
+<div style="margin-top:10px;">
+  <span class="post-time">
+    <span class="post-meta-item-icon">
+      <!-- fonts.scss -->
+      <!-- 百度字体平台:http://fontstore.baidu.com/static/editor/index.html -->
+      <i class="icon-statistics"></i>
+      <span class="post-meta-item-text"> 字数统计:</span>
+      <span class="post-count">2.8k字</span>
+    </span>
+  </span>
+
+  <span class="post-time">
+    &nbsp; | &nbsp;
+    <span class="post-meta-item-icon">
+      <i class="icon-book icon"></i>
+      <span class="post-meta-item-text"> 阅读时长≈</span>
+      <span class="post-count">13分</span>
+    </span>
+  </span>
+</div>
+
+
+  
+  </header>
+  
+  <div class="article-entry" itemprop="articleBody">
+    
+    <p>我们在做一些自动化登录的过程中，经常会遇到各种各样的图灵检测。<br><img src="/images/%E6%BB%91%E5%9D%97%E9%AA%8C%E8%AF%811.png" alt="滑块验证1"><br>因为验证码样式多变，而且需要较多命令组合才能完成验证，所以UiBot暂时没有将验证码做为一个命令组件进行预制。难到这样就没办法了吗？</p>
+<span id="more"></span>
+
+<p>难到这样就没办法了吗？显然不是，我们可以利用RPA连接外部的特性，使用部分coding来解决此问题（使用coding也算一种连接嘛）</p>
+<p>回到上例，一般来说这样的验证码验证有如下流程，我们把他拆分一下可得：</p>
+<p>1、展示完整原图，说明验证方式</p>
+<p>2、鼠标按住滑块，展现出缺陷图</p>
+<p>3、滑动滑块到缺陷部分</p>
+<p>其中，1、2两部我们用眼睛识别，用来测算距离，第3步用鼠标移动用来填补距离，基于这个逻辑，我们同样把整个验证的实现拆分成2个大步，那么第一步是算滑动距离，第二步就是根据滑动距离进行滑动了，下面我们根据实例来一步步进行分解实现。</p>
+<p>实例地址：<a target="_blank" rel="noopener" href="https://www.chinapay.com/index.jsp%EF%BC%88%E9%93%B6%E8%81%94%E7%9A%84%E7%99%BB%E5%BD%95%E5%9C%B0%E5%9D%80%EF%BC%8C%E7%94%A8%E6%88%B7%E5%90%8D%E5%AF%86%E7%A0%81%E9%9A%8F%E4%BE%BF%E8%BE%93%E5%85%A5%E5%8F%AF%E8%A7%A6%E5%8F%91%E6%BB%91%E5%8A%A8%E9%AA%8C%E8%AF%81%EF%BC%89">https://www.chinapay.com/index.jsp（银联的登录地址，用户名密码随便输入可触发滑动验证）</a></p>
+<p>要得到完整距离，首先我们要得到无缺口图和有缺口图2张图片，其中有缺口的图片需要将鼠标移到滑块上并按住才会出现，当然这也很好解决，我们可以直接使用UiBot获取这两张图，获取的方式如下：</p>
+<p><img src="/images/%E6%BB%91%E5%9D%97%E9%AA%8C%E8%AF%812.png" alt="滑块验证2"></p>
+<p>代码：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">UiElement.ScreenShot(&#123;&quot;wnd&quot;:[&#123;&quot;cls&quot;:&quot;Chrome_WidgetWin_1&quot;,&quot;title&quot;:&quot;*&quot;,&quot;app&quot;:&quot;chrome&quot;&#125;,&#123;&quot;cls&quot;:&quot;Chrome_RenderWidgetHostHWND&quot;,&quot;title&quot;:&quot;Chrome Legacy Window&quot;&#125;],&quot;html&quot;:&#123;&quot;tagName&quot;:&quot;DIV&quot;,&quot;attrMap&quot;:&#123;&quot;tag&quot;:&quot;DIV&quot;,&quot;aaname&quot;:&quot;加载中...&quot;,&quot;css-selector&quot;:&quot;body&gt;div&gt;div&gt;div&gt;div&gt;div&gt;div&quot;&#125;,&quot;index&quot;:0&#125;&#125;,&quot;1.png&quot;,&quot;content&quot;,&#123;&quot;bContinueOnError&quot;:false,&quot;iDelayAfter&quot;:300,&quot;iDelayBefore&quot;:200&#125;)</span><br><span class="line">Mouse.Hover(&#123;&quot;wnd&quot;:[&#123;&quot;cls&quot;:&quot;Chrome_WidgetWin_1&quot;,&quot;title&quot;:&quot;*&quot;,&quot;app&quot;:&quot;chrome&quot;&#125;,&#123;&quot;cls&quot;:&quot;Chrome_RenderWidgetHostHWND&quot;,&quot;title&quot;:&quot;Chrome Legacy Window&quot;&#125;],&quot;html&quot;:&#123;&quot;tagName&quot;:&quot;DIV&quot;,&quot;attrMap&quot;:&#123;&quot;tag&quot;:&quot;DIV&quot;,&quot;isleaf&quot;:&quot;1&quot;,&quot;css-selector&quot;:&quot;body&gt;div&gt;div&gt;div&gt;div&gt;div&quot;&#125;,&quot;index&quot;:3&#125;&#125;,10000,&#123;&quot;bContinueOnError&quot;:false,&quot;iDelayAfter&quot;:0,&quot;iDelayBefore&quot;:0,&quot;bSetForeground&quot;:true,&quot;sCursorPosition&quot;:&quot;Center&quot;,&quot;iCursorOffsetX&quot;:0,&quot;iCursorOffsetY&quot;:0,&quot;sKeyModifiers&quot;:[],&quot;sSimulate&quot;:&quot;simulate&quot;&#125;)</span><br><span class="line">Mouse.Click(&quot;left&quot;, &quot;down&quot;, [])</span><br><span class="line">Delay(600)</span><br><span class="line">UiElement.ScreenShot(&#123;&quot;wnd&quot;:[&#123;&quot;cls&quot;:&quot;Chrome_WidgetWin_1&quot;,&quot;title&quot;:&quot;*&quot;,&quot;app&quot;:&quot;chrome&quot;&#125;,&#123;&quot;cls&quot;:&quot;Chrome_RenderWidgetHostHWND&quot;,&quot;title&quot;:&quot;Chrome Legacy Window&quot;&#125;],&quot;html&quot;:&#123;&quot;tagName&quot;:&quot;DIV&quot;,&quot;attrMap&quot;:&#123;&quot;tag&quot;:&quot;DIV&quot;,&quot;aaname&quot;:&quot;加载中...&quot;,&quot;css-selector&quot;:&quot;body&gt;div&gt;div&gt;div&gt;div&gt;div&gt;div&quot;&#125;,&quot;index&quot;:0&#125;&#125;,&quot;2.png&quot;,&quot;content&quot;,&#123;&quot;bContinueOnError&quot;:false,&quot;iDelayAfter&quot;:300,&quot;iDelayBefore&quot;:200&#125;)</span><br></pre></td></tr></table></figure>
+<p>结果：<br><img src="/images/%E6%BB%91%E5%9D%97%E9%AA%8C%E8%AF%813.png" alt="滑块验证3"></p>
+<p>得到两张图后我们需要测算滑动距离，如何测算呢？我们可以比对上图，发现除了缺口以外其他部分基本和原图一致（有部分干扰块，但是问题不大，因为色深不够而且水平距离不一致，我们可以通过后面的算法把他滤过），所以实际上我们只需要抓住起始点和缺陷部分的特征既可算出两者直接的距离，这里我们可以通过python进行图像处理实现，具体实现如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br></pre></td><td class="code"><pre><span class="line">from PIL import Image  </span><br><span class="line">import PIL.ImageChops as imagechops</span><br><span class="line">from PIL import Image, ImageDraw,ImageFont</span><br><span class="line">import random</span><br><span class="line">def CalcDistance(srcImg,distImg):</span><br><span class="line">    im1 = Image.open(srcImg)</span><br><span class="line">    im2 = Image.open(distImg)</span><br><span class="line">    #得出两图不一致的地方</span><br><span class="line">    diff=imagechops.difference(im1, im2)</span><br><span class="line">    draw =ImageDraw.Draw(diff)</span><br><span class="line">    #通过颜色处理清除干扰块</span><br><span class="line">    for x in range(0,260):</span><br><span class="line">        for y in range(0,116):</span><br><span class="line">            pixelColor=diff.getpixel((x,y))</span><br><span class="line">            if pixelColor[0]&gt;=100 or pixelColor[1]&gt;=100 or pixelColor[2]&gt;=100:</span><br><span class="line">                draw.line((x, y, x, y),(255,255,255,255))</span><br><span class="line">            else:</span><br><span class="line">                draw.line((x, y, x, y),(0,0,0,0))</span><br><span class="line">    # #清理完可以show一下，查看清理完之后的黑白化效果</span><br><span class="line">    # diff.show()</span><br><span class="line">    #找第一个块中的参照点</span><br><span class="line">    firsetPoint=[0,0]</span><br><span class="line">    for x in range(0,260):</span><br><span class="line">        for y in range(0,116):</span><br><span class="line">            pixelColor=diff.getpixel((x,y))</span><br><span class="line">            if pixelColor!=(0,0,0,0):</span><br><span class="line">                firsetPoint=[x,y]</span><br><span class="line">                break</span><br><span class="line">        if firsetPoint!=[0,0]:</span><br><span class="line">            break</span><br><span class="line">    # 往后跳50找第二个块中的参照点，50是矩形宽度</span><br><span class="line">    secondPoint=[0,0]</span><br><span class="line">    for x in range(firsetPoint[0]+50,260):</span><br><span class="line">        for y in range(0,116):</span><br><span class="line">            pixelColor=diff.getpixel((x,y))</span><br><span class="line">            if pixelColor!=(0,0,0,0):</span><br><span class="line">                secondPoint=[x,y]</span><br><span class="line">                break</span><br><span class="line">        if secondPoint!=[0,0]:</span><br><span class="line">            break</span><br><span class="line">    # #画两条线看看位置是否标注正确，仅用于调试</span><br><span class="line">    # draw.line((firsetPoint[0], firsetPoint[1], firsetPoint[0]+20, firsetPoint[1]),(6,255,9,0))</span><br><span class="line">    # draw.line((secondPoint[0], secondPoint[1], secondPoint[0]+20, secondPoint[1]),(9,8,255,0))</span><br><span class="line">    # diff.show()</span><br><span class="line">    diffPixel=secondPoint[0]-firsetPoint[0]</span><br><span class="line">    print(diffPixel)</span><br></pre></td></tr></table></figure>
+<p>经过上述处理后，前文的图会被处理为下图的样子，并算出两块直接的一个距离</p>
+<p><img src="/images/%E6%BB%91%E5%9D%97%E9%AA%8C%E8%AF%814.png" alt="滑块验证4"></p>
+<p>得到距离，接下来我们需要驱动鼠标进行滑动，这些在UiBot里面都有相应的命令可以直接使用，在第一次处理这个验证码时，我天真的以为到算出距离就已经结束，没想到实际上滑动验证码的难点恰恰是滑动轨迹的模拟。滑动验证码在滑动轨迹上同样加入了人机测验，就算本例的解决方式也只有60%的成功率(两块相隔距离较长的情况下成功率更高)。话不多说，下面直接放轨迹的实现。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line">def GetStacks(distance):</span><br><span class="line">    distance += 20</span><br><span class="line">    &#x27;&#x27;&#x27;</span><br><span class="line">    匀加速\减速运行</span><br><span class="line">        v = v0 + a * t</span><br><span class="line">    位移:</span><br><span class="line">    s = v * t + 0.5 * a * (t**2)</span><br><span class="line">    &#x27;&#x27;&#x27;</span><br><span class="line">    # 初速度</span><br><span class="line">    v0 = 0</span><br><span class="line">    # 加减速度列表</span><br><span class="line">    a_list = [3, 4, 5]</span><br><span class="line">    # 时间</span><br><span class="line">    t = 0.2</span><br><span class="line">    # 初始位置</span><br><span class="line">    s = 0</span><br><span class="line">    # 向前滑动轨迹</span><br><span class="line">    forward_stacks = []</span><br><span class="line">    mid = distance * 3 / 5</span><br><span class="line">    while s &lt; distance:</span><br><span class="line">        if s &lt; mid:</span><br><span class="line">            a = a_list[random.randint(0, 2)]</span><br><span class="line">        else:</span><br><span class="line">            a = -a_list[random.randint(0, 2)]</span><br><span class="line">        v = v0</span><br><span class="line">        stack = v * t + 0.5 * a * (t ** 2)</span><br><span class="line">        # 每次拿到的位移</span><br><span class="line">        stack = round(stack)</span><br><span class="line">        s += stack</span><br><span class="line">        v0 = v + a * t</span><br><span class="line">        forward_stacks.append(stack)</span><br><span class="line">    back_stacks = [-1, -1, -2, -3, -2, -3, -2, -2, -3, -1]</span><br><span class="line">    return &#123;&#x27;forward_stacks&#x27;: forward_stacks, &#x27;back_stacks&#x27;: back_stacks</span><br></pre></td></tr></table></figure>
+<p>上述轨迹实现，逻辑是模拟人以加速度的形式进行增速滑动，为了骗过人机检测，特意还有个回滑的操作，而后将轨迹以相对位移数组的形式进行返回，结合我们之前距离的测算，可以得到一个完整的python文件。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br></pre></td><td class="code"><pre><span class="line">from PIL import Image  </span><br><span class="line">import PIL.ImageChops as imagechops</span><br><span class="line">from PIL import Image, ImageDraw,ImageFont</span><br><span class="line">import random</span><br><span class="line">def CalcDistance(srcImg,distImg):</span><br><span class="line">    im1 = Image.open(srcImg)</span><br><span class="line">    im2 = Image.open(distImg)</span><br><span class="line">    #得出两图不一致的地方</span><br><span class="line">    diff=imagechops.difference(im1, im2)</span><br><span class="line">    draw =ImageDraw.Draw(diff)</span><br><span class="line">    #通过颜色处理清除干扰块</span><br><span class="line">    for x in range(0,260):</span><br><span class="line">        for y in range(0,116):</span><br><span class="line">            pixelColor=diff.getpixel((x,y))</span><br><span class="line">            if pixelColor[0]&gt;=100 or pixelColor[1]&gt;=100 or pixelColor[2]&gt;=100:</span><br><span class="line">                draw.line((x, y, x, y),(255,255,255,255))</span><br><span class="line">            else:</span><br><span class="line">                draw.line((x, y, x, y),(0,0,0,0))</span><br><span class="line">    # #清理完可以show一下，查看清理完之后的黑白化效果</span><br><span class="line">    # diff.show()</span><br><span class="line">    #找第一个块中的参照点</span><br><span class="line">    firsetPoint=[0,0]</span><br><span class="line">    for x in range(0,260):</span><br><span class="line">        for y in range(0,116):</span><br><span class="line">            pixelColor=diff.getpixel((x,y))</span><br><span class="line">            if pixelColor!=(0,0,0,0):</span><br><span class="line">                firsetPoint=[x,y]</span><br><span class="line">                break</span><br><span class="line">        if firsetPoint!=[0,0]:</span><br><span class="line">            break</span><br><span class="line">    # 往后跳50找第二个块中的参照点，50是矩形宽度</span><br><span class="line">    secondPoint=[0,0]</span><br><span class="line">    for x in range(firsetPoint[0]+50,260):</span><br><span class="line">        for y in range(0,116):</span><br><span class="line">            pixelColor=diff.getpixel((x,y))</span><br><span class="line">            if pixelColor!=(0,0,0,0):</span><br><span class="line">                secondPoint=[x,y]</span><br><span class="line">                break</span><br><span class="line">        if secondPoint!=[0,0]:</span><br><span class="line">            break</span><br><span class="line">    # #画两条线看看位置是否标注正确，仅用于调试</span><br><span class="line">    # draw.line((firsetPoint[0], firsetPoint[1], firsetPoint[0]+20, firsetPoint[1]),(6,255,9,0))</span><br><span class="line">    # draw.line((secondPoint[0], secondPoint[1], secondPoint[0]+20, secondPoint[1]),(9,8,255,0))</span><br><span class="line">    # diff.show()</span><br><span class="line">    diffPixel=secondPoint[0]-firsetPoint[0]</span><br><span class="line">    return GetStacks(diffPixel)</span><br><span class="line">    </span><br><span class="line">def GetStacks(distance):</span><br><span class="line">    distance += 20</span><br><span class="line">    &#x27;&#x27;&#x27;</span><br><span class="line">    匀加速\减速运行</span><br><span class="line">        v = v0 + a * t</span><br><span class="line">    位移:</span><br><span class="line">    s = v * t + 0.5 * a * (t**2)</span><br><span class="line">    &#x27;&#x27;&#x27;</span><br><span class="line">    # 初速度</span><br><span class="line">    v0 = 0</span><br><span class="line">    # 加减速度列表</span><br><span class="line">    a_list = [3, 4, 5]</span><br><span class="line">    # 时间</span><br><span class="line">    t = 0.2</span><br><span class="line">    # 初始位置</span><br><span class="line">    s = 0</span><br><span class="line">    # 向前滑动轨迹</span><br><span class="line">    forward_stacks = []</span><br><span class="line">    mid = distance * 3 / 5</span><br><span class="line">    while s &lt; distance:</span><br><span class="line">        if s &lt; mid:</span><br><span class="line">            a = a_list[random.randint(0, 2)]</span><br><span class="line">        else:</span><br><span class="line">            a = -a_list[random.randint(0, 2)]</span><br><span class="line">        v = v0</span><br><span class="line">        stack = v * t + 0.5 * a * (t ** 2)</span><br><span class="line">        # 每次拿到的位移</span><br><span class="line">        stack = round(stack)</span><br><span class="line">        s += stack</span><br><span class="line">        v0 = v + a * t</span><br><span class="line">        forward_stacks.append(stack)</span><br><span class="line">    back_stacks = [-1, -1, -2, -3, -2, -3, -2, -2, -3, -1]</span><br><span class="line">    return &#123;&#x27;forward_stacks&#x27;: forward_stacks, &#x27;back_stacks&#x27;: back_stacks&#125;</span><br></pre></td></tr></table></figure>
+<p>现在剩下的工作是将这个文件给UiBot进行使用。我们将上面的文件保存成CrackGEE.py，放到UiBot Creator的安装目录下的 extend\python下面（可参考：<a target="_blank" rel="noopener" href="https://forum.uibot.com.cn/thread-51.htm%EF%BC%89%EF%BC%8C%E7%84%B6%E5%90%8E%E5%9C%A8UiBot%E9%87%8C%E9%9D%A2%E6%B7%BB%E5%8A%A0%E5%A6%82%E4%B8%8B%E4%BB%A3%E7%A0%81%EF%BC%9A">https://forum.uibot.com.cn/thread-51.htm），然后在UiBot里面添加如下代码：</a></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">Import CrackGEE</span><br><span class="line">#icon(&quot;@res:dp3vobi1-353k-q9mp-q5oh-nicth66fv4ag.png&quot;)</span><br><span class="line">UiElement.ScreenShot(&#123;&quot;wnd&quot;:[&#123;&quot;cls&quot;:&quot;Chrome_WidgetWin_1&quot;,&quot;title&quot;:&quot;*&quot;,&quot;app&quot;:&quot;chrome&quot;&#125;,&#123;&quot;cls&quot;:&quot;Chrome_RenderWidgetHostHWND&quot;,&quot;title&quot;:&quot;Chrome Legacy Window&quot;&#125;],&quot;html&quot;:&#123;&quot;tagName&quot;:&quot;DIV&quot;,&quot;attrMap&quot;:&#123;&quot;tag&quot;:&quot;DIV&quot;,&quot;aaname&quot;:&quot;加载中...&quot;,&quot;css-selector&quot;:&quot;body&gt;div&gt;div&gt;div&gt;div&gt;div&gt;div&quot;&#125;,&quot;index&quot;:0&#125;&#125;,&quot;1.png&quot;,&quot;content&quot;,&#123;&quot;bContinueOnError&quot;:false,&quot;iDelayAfter&quot;:300,&quot;iDelayBefore&quot;:200&#125;)</span><br><span class="line">#icon(&quot;@res:sod4iqf0-l79e-a7hu-n4rm-hom2l8pgvv4k.png&quot;)</span><br><span class="line">Mouse.Hover(&#123;&quot;wnd&quot;:[&#123;&quot;cls&quot;:&quot;Chrome_WidgetWin_1&quot;,&quot;title&quot;:&quot;*&quot;,&quot;app&quot;:&quot;chrome&quot;&#125;,&#123;&quot;cls&quot;:&quot;Chrome_RenderWidgetHostHWND&quot;,&quot;title&quot;:&quot;Chrome Legacy Window&quot;&#125;],&quot;html&quot;:&#123;&quot;tagName&quot;:&quot;DIV&quot;,&quot;attrMap&quot;:&#123;&quot;tag&quot;:&quot;DIV&quot;,&quot;isleaf&quot;:&quot;1&quot;,&quot;css-selector&quot;:&quot;body&gt;div&gt;div&gt;div&gt;div&gt;div&quot;&#125;,&quot;index&quot;:3&#125;&#125;,10000,&#123;&quot;bContinueOnError&quot;:false,&quot;iDelayAfter&quot;:0,&quot;iDelayBefore&quot;:0,&quot;bSetForeground&quot;:true,&quot;sCursorPosition&quot;:&quot;Center&quot;,&quot;iCursorOffsetX&quot;:0,&quot;iCursorOffsetY&quot;:0,&quot;sKeyModifiers&quot;:[],&quot;sSimulate&quot;:&quot;simulate&quot;&#125;)</span><br><span class="line">Mouse.Click(&quot;left&quot;, &quot;down&quot;, [])</span><br><span class="line">Delay(600)</span><br><span class="line">#icon(&quot;@res:dp3vobi1-353k-q9mp-q5oh-nicth66fv4ag.png&quot;)</span><br><span class="line">UiElement.ScreenShot(&#123;&quot;wnd&quot;:[&#123;&quot;cls&quot;:&quot;Chrome_WidgetWin_1&quot;,&quot;title&quot;:&quot;*&quot;,&quot;app&quot;:&quot;chrome&quot;&#125;,&#123;&quot;cls&quot;:&quot;Chrome_RenderWidgetHostHWND&quot;,&quot;title&quot;:&quot;Chrome Legacy Window&quot;&#125;],&quot;html&quot;:&#123;&quot;tagName&quot;:&quot;DIV&quot;,&quot;attrMap&quot;:&#123;&quot;tag&quot;:&quot;DIV&quot;,&quot;aaname&quot;:&quot;加载中...&quot;,&quot;css-selector&quot;:&quot;body&gt;div&gt;div&gt;div&gt;div&gt;div&gt;div&quot;&#125;,&quot;index&quot;:0&#125;&#125;,&quot;2.png&quot;,&quot;content&quot;,&#123;&quot;bContinueOnError&quot;:false,&quot;iDelayAfter&quot;:300,&quot;iDelayBefore&quot;:200&#125;)</span><br><span class="line">dim 点列表=[]</span><br><span class="line">点列表=CrackGEE.CalcDistance(&quot;1.png&quot;,&quot;2.png&quot;)</span><br><span class="line">TracePrint(点列表)</span><br><span class="line">Dim 正向移动=点列表[&quot;forward_stacks&quot;]</span><br><span class="line">Dim 回移=点列表[&quot;back_stacks&quot;]</span><br><span class="line">For Each value In 正向移动</span><br><span class="line"> Mouse.Move(value, 0, true)</span><br><span class="line">Delay(12)</span><br><span class="line">Next</span><br><span class="line">For Each value In 回移</span><br><span class="line"> Mouse.Move(value, 0, true)</span><br><span class="line">Delay(34)</span><br><span class="line">Next</span><br><span class="line">Delay(200)</span><br><span class="line">Mouse.Click(&quot;left&quot;, &quot;up&quot;, [])</span><br></pre></td></tr></table></figure>
+
+
+
+<p>视图:</p>
+<p><img src="/images/%E6%BB%91%E5%9D%97%E9%AA%8C%E8%AF%815.png" alt="滑块验证5"></p>
+<p>在使用chrome打开银联网站,随便输入用户名密码，呼出验证，停留在如下图所示地方：</p>
+<p><img src="/images/%E6%BB%91%E5%9D%97%E9%AA%8C%E8%AF%816.png" alt="滑块验证6"></p>
+<p>点击UiBot Creator的运行，即可看到效果。<br><video src="/images/滑块验证7.mp4" controls="controls">您的浏览器不支持播放该视频！</video></p>
+<p>本例权当抛砖引玉，实际上在短距离的比对计算还有滑动轨迹上面还有不小的提升空间，有兴趣的大神可以进一步进行扩展。</p>
+
+    
+
+    
+
+    
+
+  </div>
+  <div class="article-info article-info-index">
+    
+    
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -249,105 +322,107 @@
 		</ul>
 	</div>
 
-          
+    
 
+    
+
+    
+    
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <!-- <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a> -->
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+     <!-- <img src="//pan.baidu.com/share/qrcode?url=https://longchao012.github.io/2022/08/23/%E5%9F%BA%E4%BA%8EUiBot%E7%9A%84%E6%BB%91%E5%8A%A8%E9%AA%8C%E8%AF%81%E7%A0%81%E6%A3%80%E6%B5%8B%E5%AE%9E%E4%BE%8B/" alt="微信分享二维码"> -->
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+
+    
+    <div class="clearfix"></div>
+  </div>
   </div>
 </article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2022/08/21/%E5%8D%95%E8%A1%A8100%E4%B8%87%E6%95%B0%E6%8D%AE%EF%BC%8C%E5%86%99%E5%85%A5%E3%80%81%E6%9B%B4%E6%96%B0%E3%80%81%E8%AF%BB%E5%8F%96%E3%80%81%E5%88%A0%E9%99%A4%E9%80%9F%E5%BA%A6%E7%9A%84%E6%B5%8B%E8%AF%95%E9%AA%8C%E8%AF%81%EF%BC%81/" class="archive-article-date">
-        <time datetime="2022-08-21T06:39:15.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-08-21</time>
-</a>
 
+
+<nav id="article-nav">
+  
+  
+    <a href="/2022/08/21/%E5%8D%95%E8%A1%A8100%E4%B8%87%E6%95%B0%E6%8D%AE%EF%BC%8C%E5%86%99%E5%85%A5%E3%80%81%E6%9B%B4%E6%96%B0%E3%80%81%E8%AF%BB%E5%8F%96%E3%80%81%E5%88%A0%E9%99%A4%E9%80%9F%E5%BA%A6%E7%9A%84%E6%B5%8B%E8%AF%95%E9%AA%8C%E8%AF%81%EF%BC%81/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">基于Java的单表100万数据，写入、更新、读取、删除速度的测试验证！</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-	
-	  <a class="archive-article-title" href="/2022/08/21/%E5%8D%95%E8%A1%A8100%E4%B8%87%E6%95%B0%E6%8D%AE%EF%BC%8C%E5%86%99%E5%85%A5%E3%80%81%E6%9B%B4%E6%96%B0%E3%80%81%E8%AF%BB%E5%8F%96%E3%80%81%E5%88%A0%E9%99%A4%E9%80%9F%E5%BA%A6%E7%9A%84%E6%B5%8B%E8%AF%95%E9%AA%8C%E8%AF%81%EF%BC%81/" target="_blank">基于Java的单表100万数据，写入、更新、读取、删除速度的测试验证！</a>
-  
-    </h1>
-  
+        
+        
+    </div>
+</aside>
 
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">MySQL、SpringBoot</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2022/08/16/%E5%9F%BA%E4%BA%8EUiBot%E5%BC%80%E5%8F%91%E7%9A%84RPA%E9%A1%B9%E7%9B%AE%E9%93%B6%E8%A1%8C%E6%B5%81%E6%B0%B4%E4%B8%8B%E8%BD%BD%E6%B5%81%E7%A8%8B/" class="archive-article-date">
-        <time datetime="2022-08-16T02:10:22.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-08-16</time>
-</a>
-
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-	
-	  <a class="archive-article-title" href="/2022/08/16/%E5%9F%BA%E4%BA%8EUiBot%E5%BC%80%E5%8F%91%E7%9A%84RPA%E9%A1%B9%E7%9B%AE%E9%93%B6%E8%A1%8C%E6%B5%81%E6%B0%B4%E4%B8%8B%E8%BD%BD%E6%B5%81%E7%A8%8B/" target="_blank">基于UiBot开发的RPA项目各类银行操作流程(银行流水下载、自动填写付款单等)</a>
-  
-    </h1>
-  
 
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">RPA、银行、办公自动化</a>
-        		</li>
-      		
-		</ul>
-	</div>
 
-          
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
 
-    
+
+
+
+
+
 
 
           </div>
@@ -388,8 +463,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: true,

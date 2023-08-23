@@ -18,7 +18,7 @@
 <meta property="og:description" content="基于UiBot开发的RPA项目银行流水下载流程做过很多关于银行相关的RPA项目，本次主要以UIBot这个工具来实施的银行相关RPA项目。使用的UiBot Creator 5.6的版本，后续更新为6.0版本。涉及的银行有中国银行，工商银行，民生银行，光大银行，农业银行等多少银行。有通过C&#x2F;S访问的，也有通过B&#x2F;S访问的。客户方面都没有做太多的限制，能满足业务需要即可。开发的周期，">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2022-08-16T02:10:22.000Z">
-<meta property="article:modified_time" content="2023-08-18T01:52:10.622Z">
+<meta property="article:modified_time" content="2023-08-23T10:14:57.368Z">
 <meta property="article:author" content="龙超小站">
 <meta property="article:tag" content="RPA、银行、办公自动化">
 <meta name="twitter:card" content="summary">
@@ -261,7 +261,7 @@
     
     <p>基于UiBot开发的RPA项目银行流水下载流程<br>做过很多关于银行相关的RPA项目，本次主要以UIBot这个工具来实施的银行相关RPA项目。使用的UiBot Creator 5.6的版本，后续更新为6.0版本。涉及的银行有中国银行，工商银行，民生银行，光大银行，农业银行等多少银行。有通过C&#x2F;S访问的，也有通过B&#x2F;S访问的。客户方面都没有做太多的限制，能满足业务需要即可。开发的周期，看业务需求的范围与数据结构的复杂度。如果有对账，数据转换等需求的项目可能时间会相对长一点，如果只是单纯的下载流水或填写付款单等待，那基本会很快，时间可以控制在一到两周以内。<br>目前为止。接受到的需求主要有以下几种：<br>1.流水查询(一般会跟着有有自动对账需求)<br>2.付款单填写<br>总体来说，就是资金的借与贷的变化。除此无它！</p>
 <p>那么我们开发的过程中可能会遇到什么问题呢？</p>
-<span id="more"></span>)
+<span id="more"></span>
 <h2 id="开发过程中可能会遇到的问题"><a href="#开发过程中可能会遇到的问题" class="headerlink" title="开发过程中可能会遇到的问题"></a>开发过程中可能会遇到的问题</h2><h3 id="安全性问题"><a href="#安全性问题" class="headerlink" title="安全性问题"></a>安全性问题</h3><p>做银行相关的项目，其中最重要的也是客户最关心的就是安全性问题，就以目前的项目来说，安全性其它不太用顾虑。因为如果是查流水，没有太多的资金的上担忧，只是简单的查。而且数据也不是那么容易泄漏的，主要是有三个方面的防护<br>1.物理性的防护，通过保护电脑与主机还有Ukey(主要)，在使用的时候才插入Ukey即可。<br>2.登录密码的防护，可以把密码写入到Window的凭证中，通过UiBot内置的组件来读取，开发人员也不知道这个密码是什么。<br>3.严密的保存交易密码。RPA流程不会涉及到交易密码，也不建议把交易密码暴露出来让RPA机器人使用。</p>
 <h3 id="需求中的问题"><a href="#需求中的问题" class="headerlink" title="需求中的问题"></a>需求中的问题</h3><p>主要是个别客户的对账的过程复杂，需要考虑的因素特别多，对账时候的数据非标准数据，需要很多的数据转换。这其中的过程遇到很多的困难。<br>同时，有时候客户自身对需求的细节也会判定不足，导致开发过程中进行不下去，项目周末延长。</p>
 <h3 id="银行系统的限制问题"><a href="#银行系统的限制问题" class="headerlink" title="银行系统的限制问题"></a>银行系统的限制问题</h3><p>银行系统会监测你的行为还有不允许有远程之类的操作。不能让远程控制输入密码。可以调用驱动级的键盘输入解决问题。部分银行的系统的C&#x2F;S端元素的布局是比较混乱的，元素明明在A点，坐标却是偏到了天边的B点，而很多的控件或元素都是无法获取到对应的元素坐标。不知道是出于安全还是其它方面的考虑。这个没有太好的解决办法，只能一点点的适配与调节。而相比B&#x2F;S端这种情况就会好很多，但是很多客户的电脑配置都不太好，而且银行对浏览器的支持也是强差人意。只能根据每个客户做相对应的调整与配置。</p>
@@ -535,6 +535,10 @@
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">RPA、Python、办公自动化</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">RPA</a>
               </li>
             
             <div class="clearfix"></div>
