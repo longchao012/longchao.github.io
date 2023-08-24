@@ -6,7 +6,7 @@
   <link href="https://longchao012.github.io/atom.xml" rel="self"/>
   
   <link href="https://longchao012.github.io/"/>
-  <updated>2023-08-23T10:14:25.837Z</updated>
+  <updated>2023-08-24T03:54:36.897Z</updated>
   <id>https://longchao012.github.io/</id>
   
   <author>
@@ -15,6 +15,25 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>小案例：制作《数据流图》与《业务流程图》</title>
+    <link href="https://longchao012.github.io/2022/08/24/%E5%B0%8F%E6%A1%88%E4%BE%8B%EF%BC%9A%E5%88%B6%E4%BD%9C%E3%80%8A%E6%95%B0%E6%8D%AE%E6%B5%81%E5%9B%BE%E3%80%8B%E4%B8%8E%E3%80%8A%E4%B8%9A%E5%8A%A1%E6%B5%81%E7%A8%8B%E5%9B%BE%E3%80%8B/"/>
+    <id>https://longchao012.github.io/2022/08/24/%E5%B0%8F%E6%A1%88%E4%BE%8B%EF%BC%9A%E5%88%B6%E4%BD%9C%E3%80%8A%E6%95%B0%E6%8D%AE%E6%B5%81%E5%9B%BE%E3%80%8B%E4%B8%8E%E3%80%8A%E4%B8%9A%E5%8A%A1%E6%B5%81%E7%A8%8B%E5%9B%BE%E3%80%8B/</id>
+    <published>2022-08-24T03:53:12.000Z</published>
+    <updated>2023-08-24T03:54:36.897Z</updated>
+    
+    <content type="html"><![CDATA[<p>数据流图（Data Flow Diagram, DFD）是一种便于用户理解和分析系统数据流程的图形工具，他摆脱了系统和具体内容，精确的在逻辑上描述系统的功能、输入、输出和数据存储等，是系统逻辑模型的重要组成部分。</p><span id="more"></span><h2 id="一、数据流图组成部分"><a href="#一、数据流图组成部分" class="headerlink" title="一、数据流图组成部分"></a>一、数据流图组成部分</h2><p><strong>数据流：</strong>是由一组固定成分的数据组成，表示数据的流向，除了流向数据存储或从数据存储流出的数据不必命名外，每个数据流必须要有一个合适的名字，以反映该数据流的含义</p><p><strong>加工：</strong>加工描述了输入数据流到输出数据之间的变换，也就是输入数据流经过什么处理后变成了输出数据</p><p><strong>数据存储：</strong>数据存储表示暂时存储的数据,每个数据存储都有一个名字</p><p><strong>外部实体：</strong>外部实体是存在于软件系统之外的人员或组织</p><h2 id="二、基本图形符号（重点）"><a href="#二、基本图形符号（重点）" class="headerlink" title="二、基本图形符号（重点）"></a>二、基本图形符号（重点）</h2><p>方框：表示数据的源点或终点</p><p><img src="/images/%E6%95%B0%E6%8D%AE%E6%B5%81%E5%9B%BE1.png" alt="数据流图1"><br>圆或椭圆：表示加工</p><p><img src="/images/%E6%95%B0%E6%8D%AE%E6%B5%81%E5%9B%BE2.png" alt="数据流图2"><br>箭头：表示数据流</p><p><img src="/images/%E6%95%B0%E6%8D%AE%E6%B5%81%E5%9B%BE3.png" alt="数据流图3"><br>双杠：表示数据存储</p><p><img src="/images/%E6%95%B0%E6%8D%AE%E6%B5%81%E5%9B%BE4.png" alt="数据流图4"></p><h2 id="三、实战案列"><a href="#三、实战案列" class="headerlink" title="三、实战案列"></a>三、实战案列</h2><p>题目：</p><p><img src="/images/%E6%95%B0%E6%8D%AE%E6%B5%81%E5%9B%BE5.png" alt="数据流图5"><br>大家可以看见这个是一个机票预订系统「：黑色的字体都是关键字」，现在让我们试试画出这个数据流图。</p><p><em>航空公司 会根据 航班信息来 安排航班</em></p><p>可以看的出航空公司是一个实体，航班信息是种数据，安排航班是处理这个数据，所以我们得到以下的图。</p><p><img src="/images/%E6%95%B0%E6%8D%AE%E6%B5%81%E5%9B%BE6.png" alt="数据流图6"></p><p><em>并将航班信息存储在订票信息中</em></p><p>上面的话可以看见将航班信息存储在订票信息中，得到下图：</p><p><img src="/images/%E6%95%B0%E6%8D%AE%E6%B5%81%E5%9B%BE7.png" alt="数据流图7"></p><p><em>旅客订票时，旅客将旅客信息输入该系统</em></p><p>上面的话可以看出有操作了，实体是旅客，操作数据是订票行为，将信息输入该系统（订票）下图：</p><p><img src="/images/%E6%95%B0%E6%8D%AE%E6%B5%81%E5%9B%BE8.png" alt="数据流图8"></p><p><em>系统通过旅客信息，在订票信息中查询合适的航班，并返回机票信息</em></p><p>通过上面的看见发现是系统查询并返回系统（注意：订票信息只是把名字放上面去了，没有更改图）</p><p><img src="/images/%E6%95%B0%E6%8D%AE%E6%B5%81%E5%9B%BE9.png" alt="数据流图9"></p><p><em>然后系统根据机票信息，打印机票</em></p><p>上面又有操作，根据机票信息这个数据流来打印机票（操作数据）得下图：</p><p><img src="/images/%E6%95%B0%E6%8D%AE%E6%B5%81%E5%9B%BE10.png" alt="数据流图10"></p><p><em>最后将机票信息返回给旅客</em></p><p>这步就是结束了：</p><p><img src="/images/%E6%95%B0%E6%8D%AE%E6%B5%81%E5%9B%BE11.png" alt="数据流图11"><br>好了以上就是数据流图的一个小实战，其实画图简单，只要搞清楚了实体的关系联系，基本上都是换汤不换药，轻轻松松~~~</p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;数据流图（Data Flow Diagram, DFD）是一种便于用户理解和分析系统数据流程的图形工具，他摆脱了系统和具体内容，精确的在逻辑上描述系统的功能、输入、输出和数据存储等，是系统逻辑模型的重要组成部分。&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="UML" scheme="https://longchao012.github.io/tags/UML/"/>
+    
+  </entry>
   
   <entry>
     <title>基于UiBot的滑动验证码检测实例</title>

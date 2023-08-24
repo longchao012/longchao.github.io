@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://longchao012.github.io/2022/08/24/%E5%B0%8F%E6%A1%88%E4%BE%8B%EF%BC%9A%E5%88%B6%E4%BD%9C%E3%80%8A%E6%95%B0%E6%8D%AE%E6%B5%81%E5%9B%BE%E3%80%8B%E4%B8%8E%E3%80%8A%E4%B8%9A%E5%8A%A1%E6%B5%81%E7%A8%8B%E5%9B%BE%E3%80%8B/</loc>
+    
+    <lastmod>2023-08-24</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://longchao012.github.io/2022/07/15/hello-world/</loc>
     
     <lastmod>2023-08-23</lastmod>
@@ -49,7 +58,7 @@
 
   <url>
     <loc>https://longchao012.github.io/</loc>
-    <lastmod>2023-08-23</lastmod>
+    <lastmod>2023-08-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -57,28 +66,35 @@
   
   <url>
     <loc>https://longchao012.github.io/tags/RPA%E3%80%81%E9%93%B6%E8%A1%8C%E3%80%81%E5%8A%9E%E5%85%AC%E8%87%AA%E5%8A%A8%E5%8C%96/</loc>
-    <lastmod>2023-08-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://longchao012.github.io/tags/MySQL%E3%80%81SpringBoot/</loc>
-    <lastmod>2023-08-23</lastmod>
+    <lastmod>2023-08-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://longchao012.github.io/tags/RPA%E3%80%81Python%E3%80%81%E5%8A%9E%E5%85%AC%E8%87%AA%E5%8A%A8%E5%8C%96/</loc>
-    <lastmod>2023-08-23</lastmod>
+    <lastmod>2023-08-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://longchao012.github.io/tags/RPA/</loc>
-    <lastmod>2023-08-23</lastmod>
+    <lastmod>2023-08-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://longchao012.github.io/tags/MySQL%E3%80%81SpringBoot/</loc>
+    <lastmod>2023-08-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://longchao012.github.io/tags/UML/</loc>
+    <lastmod>2023-08-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
