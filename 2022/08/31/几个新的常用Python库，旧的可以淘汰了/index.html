@@ -6,34 +6,22 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://longchao012.github.io">
-  <title>小案例：制作《数据流图》与《业务流程图》 | Hexo</title>
+  <title>几个新的常用Python库，旧的可以淘汰了 | Hexo</title>
   <meta name="generator" content="hexo-theme-yilia-plus">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-  <meta name="description" content="数据流图（Data Flow Diagram, DFD）是一种便于用户理解和分析系统数据流程的图形工具，他摆脱了系统和具体内容，精确的在逻辑上描述系统的功能、输入、输出和数据存储等，是系统逻辑模型的重要组成部分。">
+  <meta name="description" content="随着每个 Python 版本的发布，都会添加新模块，并引入新的更好的做事方式，虽然我们都习惯了使用好的旧 Python 库和某些做事方式，但现在也时候升级并利用新的和改进的模块及其特性了。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="小案例：制作《数据流图》与《业务流程图》">
-<meta property="og:url" content="https://longchao012.github.io/2022/08/24/%E5%B0%8F%E6%A1%88%E4%BE%8B%EF%BC%9A%E5%88%B6%E4%BD%9C%E3%80%8A%E6%95%B0%E6%8D%AE%E6%B5%81%E5%9B%BE%E3%80%8B%E4%B8%8E%E3%80%8A%E4%B8%9A%E5%8A%A1%E6%B5%81%E7%A8%8B%E5%9B%BE%E3%80%8B/index.html">
+<meta property="og:title" content="几个新的常用Python库，旧的可以淘汰了">
+<meta property="og:url" content="https://longchao012.github.io/2022/08/31/%E5%87%A0%E4%B8%AA%E6%96%B0%E7%9A%84%E5%B8%B8%E7%94%A8Python%E5%BA%93%EF%BC%8C%E6%97%A7%E7%9A%84%E5%8F%AF%E4%BB%A5%E6%B7%98%E6%B1%B0%E4%BA%86/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="数据流图（Data Flow Diagram, DFD）是一种便于用户理解和分析系统数据流程的图形工具，他摆脱了系统和具体内容，精确的在逻辑上描述系统的功能、输入、输出和数据存储等，是系统逻辑模型的重要组成部分。">
+<meta property="og:description" content="随着每个 Python 版本的发布，都会添加新模块，并引入新的更好的做事方式，虽然我们都习惯了使用好的旧 Python 库和某些做事方式，但现在也时候升级并利用新的和改进的模块及其特性了。">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://longchao012.github.io/images/%E6%95%B0%E6%8D%AE%E6%B5%81%E5%9B%BE1.png">
-<meta property="og:image" content="https://longchao012.github.io/images/%E6%95%B0%E6%8D%AE%E6%B5%81%E5%9B%BE2.png">
-<meta property="og:image" content="https://longchao012.github.io/images/%E6%95%B0%E6%8D%AE%E6%B5%81%E5%9B%BE3.png">
-<meta property="og:image" content="https://longchao012.github.io/images/%E6%95%B0%E6%8D%AE%E6%B5%81%E5%9B%BE4.png">
-<meta property="og:image" content="https://longchao012.github.io/images/%E6%95%B0%E6%8D%AE%E6%B5%81%E5%9B%BE5.png">
-<meta property="og:image" content="https://longchao012.github.io/images/%E6%95%B0%E6%8D%AE%E6%B5%81%E5%9B%BE6.png">
-<meta property="og:image" content="https://longchao012.github.io/images/%E6%95%B0%E6%8D%AE%E6%B5%81%E5%9B%BE7.png">
-<meta property="og:image" content="https://longchao012.github.io/images/%E6%95%B0%E6%8D%AE%E6%B5%81%E5%9B%BE8.png">
-<meta property="og:image" content="https://longchao012.github.io/images/%E6%95%B0%E6%8D%AE%E6%B5%81%E5%9B%BE9.png">
-<meta property="og:image" content="https://longchao012.github.io/images/%E6%95%B0%E6%8D%AE%E6%B5%81%E5%9B%BE10.png">
-<meta property="og:image" content="https://longchao012.github.io/images/%E6%95%B0%E6%8D%AE%E6%B5%81%E5%9B%BE11.png">
-<meta property="article:published_time" content="2022-08-24T03:53:12.000Z">
-<meta property="article:modified_time" content="2023-08-24T03:54:36.897Z">
+<meta property="article:published_time" content="2022-08-31T02:56:14.000Z">
+<meta property="article:modified_time" content="2023-09-04T03:03:00.264Z">
 <meta property="article:author" content="龙超小站">
-<meta property="article:tag" content="UML">
+<meta property="article:tag" content="Python">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://longchao012.github.io/images/%E6%95%B0%E6%8D%AE%E6%B5%81%E5%9B%BE1.png">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -218,14 +206,14 @@
               class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-小案例：制作《数据流图》与《业务流程图》" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-几个新的常用Python库，旧的可以淘汰了" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
   
   
     <h1 class="article-title" itemprop="name">
-      小案例：制作《数据流图》与《业务流程图》
+      几个新的常用Python库，旧的可以淘汰了
     </h1>
   
 
@@ -237,8 +225,8 @@
               <i class="icon-smile icon"></i> 阅读数：<span id="busuanzi_value_page_pv"></span>次
         </span>
 
-<a href="/2022/08/24/%E5%B0%8F%E6%A1%88%E4%BE%8B%EF%BC%9A%E5%88%B6%E4%BD%9C%E3%80%8A%E6%95%B0%E6%8D%AE%E6%B5%81%E5%9B%BE%E3%80%8B%E4%B8%8E%E3%80%8A%E4%B8%9A%E5%8A%A1%E6%B5%81%E7%A8%8B%E5%9B%BE%E3%80%8B/" class="archive-article-date">
-        <time datetime="2022-08-24T03:53:12.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-08-24</time>
+<a href="/2022/08/31/%E5%87%A0%E4%B8%AA%E6%96%B0%E7%9A%84%E5%B8%B8%E7%94%A8Python%E5%BA%93%EF%BC%8C%E6%97%A7%E7%9A%84%E5%8F%AF%E4%BB%A5%E6%B7%98%E6%B1%B0%E4%BA%86/" class="archive-article-date">
+        <time datetime="2022-08-31T02:56:14.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-08-31</time>
 </a>
 
   
@@ -251,7 +239,7 @@
       <!-- 百度字体平台:http://fontstore.baidu.com/static/editor/index.html -->
       <i class="icon-statistics"></i>
       <span class="post-meta-item-text"> 字数统计:</span>
-      <span class="post-count">684字</span>
+      <span class="post-count">3k字</span>
     </span>
   </span>
 
@@ -260,7 +248,7 @@
     <span class="post-meta-item-icon">
       <i class="icon-book icon"></i>
       <span class="post-meta-item-text"> 阅读时长≈</span>
-      <span class="post-count">2分</span>
+      <span class="post-count">13分</span>
     </span>
   </span>
 </div>
@@ -271,38 +259,59 @@
   
   <div class="article-entry" itemprop="articleBody">
     
-    <p>数据流图（Data Flow Diagram, DFD）是一种便于用户理解和分析系统数据流程的图形工具，他摆脱了系统和具体内容，精确的在逻辑上描述系统的功能、输入、输出和数据存储等，是系统逻辑模型的重要组成部分。</p>
+    <p>随着每个 Python 版本的发布，都会添加新模块，并引入新的更好的做事方式，虽然我们都习惯了使用好的旧 Python 库和某些做事方式，但现在也时候升级并利用新的和改进的模块及其特性了。</p>
 <span id="more"></span>
 
-<h2 id="一、数据流图组成部分"><a href="#一、数据流图组成部分" class="headerlink" title="一、数据流图组成部分"></a>一、数据流图组成部分</h2><p><strong>数据流：</strong>是由一组固定成分的数据组成，表示数据的流向，除了流向数据存储或从数据存储流出的数据不必命名外，每个数据流必须要有一个合适的名字，以反映该数据流的含义</p>
-<p><strong>加工：</strong>加工描述了输入数据流到输出数据之间的变换，也就是输入数据流经过什么处理后变成了输出数据</p>
-<p><strong>数据存储：</strong>数据存储表示暂时存储的数据,每个数据存储都有一个名字</p>
-<p><strong>外部实体：</strong>外部实体是存在于软件系统之外的人员或组织</p>
-<h2 id="二、基本图形符号（重点）"><a href="#二、基本图形符号（重点）" class="headerlink" title="二、基本图形符号（重点）"></a>二、基本图形符号（重点）</h2><p>方框：表示数据的源点或终点</p>
-<p><img src="/images/%E6%95%B0%E6%8D%AE%E6%B5%81%E5%9B%BE1.png" alt="数据流图1"><br>圆或椭圆：表示加工</p>
-<p><img src="/images/%E6%95%B0%E6%8D%AE%E6%B5%81%E5%9B%BE2.png" alt="数据流图2"><br>箭头：表示数据流</p>
-<p><img src="/images/%E6%95%B0%E6%8D%AE%E6%B5%81%E5%9B%BE3.png" alt="数据流图3"><br>双杠：表示数据存储</p>
-<p><img src="/images/%E6%95%B0%E6%8D%AE%E6%B5%81%E5%9B%BE4.png" alt="数据流图4"></p>
-<h2 id="三、实战案列"><a href="#三、实战案列" class="headerlink" title="三、实战案列"></a>三、实战案列</h2><p>题目：</p>
-<p><img src="/images/%E6%95%B0%E6%8D%AE%E6%B5%81%E5%9B%BE5.png" alt="数据流图5"><br>大家可以看见这个是一个机票预订系统「：黑色的字体都是关键字」，现在让我们试试画出这个数据流图。</p>
-<p><em>航空公司 会根据 航班信息来 安排航班</em></p>
-<p>可以看的出航空公司是一个实体，航班信息是种数据，安排航班是处理这个数据，所以我们得到以下的图。</p>
-<p><img src="/images/%E6%95%B0%E6%8D%AE%E6%B5%81%E5%9B%BE6.png" alt="数据流图6"></p>
-<p><em>并将航班信息存储在订票信息中</em></p>
-<p>上面的话可以看见将航班信息存储在订票信息中，得到下图：</p>
-<p><img src="/images/%E6%95%B0%E6%8D%AE%E6%B5%81%E5%9B%BE7.png" alt="数据流图7"></p>
-<p><em>旅客订票时，旅客将旅客信息输入该系统</em></p>
-<p>上面的话可以看出有操作了，实体是旅客，操作数据是订票行为，将信息输入该系统（订票）下图：</p>
-<p><img src="/images/%E6%95%B0%E6%8D%AE%E6%B5%81%E5%9B%BE8.png" alt="数据流图8"></p>
-<p><em>系统通过旅客信息，在订票信息中查询合适的航班，并返回机票信息</em></p>
-<p>通过上面的看见发现是系统查询并返回系统（注意：订票信息只是把名字放上面去了，没有更改图）</p>
-<p><img src="/images/%E6%95%B0%E6%8D%AE%E6%B5%81%E5%9B%BE9.png" alt="数据流图9"></p>
-<p><em>然后系统根据机票信息，打印机票</em></p>
-<p>上面又有操作，根据机票信息这个数据流来打印机票（操作数据）得下图：</p>
-<p><img src="/images/%E6%95%B0%E6%8D%AE%E6%B5%81%E5%9B%BE10.png" alt="数据流图10"></p>
-<p><em>最后将机票信息返回给旅客</em></p>
-<p>这步就是结束了：</p>
-<p><img src="/images/%E6%95%B0%E6%8D%AE%E6%B5%81%E5%9B%BE11.png" alt="数据流图11"><br>好了以上就是数据流图的一个小实战，其实画图简单，只要搞清楚了实体的关系联系，基本上都是换汤不换药，轻轻松松~~~</p>
+<p><strong>Pathlib 而不是 OS</strong><br>pathlib 绝对是 Python 标准库中最近添加的更大的内容之一， 自 Python 3.4 以来，它一直是标准库的一部分，但很多人仍然使用 os 模块进行文件系统操作。</p>
+<p>然而，pathlib 与旧的 os.path 相比具有许多优点 - 虽然 os 模块以原始字符串格式表示路径，但 pathlib 使用面向对象的样式，这使得它更具可读性和编写自然：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">from pathlib import Path</span><br><span class="line">import os.path</span><br><span class="line"></span><br><span class="line"># 老方式</span><br><span class="line">two_dirs_up = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))</span><br><span class="line"></span><br><span class="line"># 新方式，可读性强</span><br><span class="line">two_dirs_up = Path(__file__).resolve().parent.parent</span><br></pre></td></tr></table></figure>
+<p>路径被视为对象而不是字符串这一事实也使得可以创建一次对象，然后查找其属性或对其进行操作：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">readme = Path(&quot;README.md&quot;).resolve()</span><br><span class="line"></span><br><span class="line">print(f&quot;Absolute path: &#123;readme.absolute()&#125;&quot;)</span><br><span class="line"># Absolute path: /home/martin/some/path/README.md</span><br><span class="line">print(f&quot;File name: &#123;readme.name&#125;&quot;)</span><br><span class="line"># File name: README.md</span><br><span class="line">print(f&quot;Path root: &#123;readme.root&#125;&quot;)</span><br><span class="line"># Path root: /</span><br><span class="line">print(f&quot;Parent directory: &#123;readme.parent&#125;&quot;)</span><br><span class="line"># Parent directory: /home/martin/some/path</span><br><span class="line">print(f&quot;File extension: &#123;readme.suffix&#125;&quot;)</span><br><span class="line"># File extension: .md</span><br><span class="line">print(f&quot;Is it absolute: &#123;readme.is_absolute()&#125;&quot;)</span><br><span class="line"># Is it absolute: True</span><br></pre></td></tr></table></figure>
+<p>我最喜欢 pathlib 的一个特性是可以使用 &#x2F;（“除法”）运算符来连接路径：</p>
+<p># Operators:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">etc = Path(&#x27;/etc&#x27;)</span><br><span class="line"></span><br><span class="line">joined = etc / &quot;cron.d&quot; / &quot;anacron&quot;</span><br><span class="line">print(f&quot;Exists? - &#123;joined.exists()&#125;&quot;)</span><br><span class="line"># Exists? - True</span><br></pre></td></tr></table></figure>
+<p>重要的是要注意 pathlib 只是替代 os.path 而不是整个 os 模块， 它还包括 glob 模块的功能，因此如果你习惯于将 os.path 与 glob.glob 结合使用，那么你可以完全用pathlib替代它们。</p>
+<p>在上面的片段中，我们展示了一些方便的路径操作和对象属性，但 pathlib 还包括你习惯于 os.path 的所有方法，例如：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">print(f&quot;Working directory: &#123;Path.cwd()&#125;&quot;)  # same as os.getcwd()</span><br><span class="line"># Working directory: /home/martin/some/path</span><br><span class="line">Path.mkdir(Path.cwd() / &quot;new_dir&quot;, exist_ok=True)  # same as os.makedirs()</span><br><span class="line">print(Path(&quot;README.md&quot;).resolve())  # same as os.path.abspath()</span><br><span class="line"># /home/martin/some/path/README.md</span><br><span class="line">print(Path.home())  # same as os.path.expanduser()</span><br><span class="line"># /home/martin</span><br></pre></td></tr></table></figure>
+<p>有关 os.path 函数到 pathlib 中新函数的完整映射，请参阅 官方文档。</p>
+<p><strong>Secrets 而不是 OS</strong><br>说到 os 模块，你应该停止使用的另一部分是 os.urandom。相反，你应该使用自 Python 3.6 以来可用的新秘密模块：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"># 老方式:</span><br><span class="line">import os</span><br><span class="line"></span><br><span class="line">length = 64</span><br><span class="line"></span><br><span class="line">value = os.urandom(length)</span><br><span class="line">print(f&quot;Bytes: &#123;value&#125;&quot;)</span><br><span class="line"># Bytes: b&#x27;\xfa\xf3...\xf2\x1b\xf5\xb6&#x27;</span><br><span class="line">print(f&quot;Hex: &#123;value.hex()&#125;&quot;)</span><br><span class="line"># Hex: faf3cc656370e31a938e7...33d9b023c3c24f1bf5</span><br><span class="line"></span><br><span class="line"># 新方式:</span><br><span class="line">import secrets</span><br><span class="line"></span><br><span class="line">value = secrets.token_bytes(length)</span><br><span class="line">print(f&quot;Bytes: &#123;value&#125;&quot;)</span><br><span class="line"># Bytes: b&#x27;U\xe9n\x87...\x85&gt;\x04j:\xb0&#x27;</span><br><span class="line">value = secrets.token_hex(length)</span><br><span class="line">print(f&quot;Hex: &#123;value&#125;&quot;)</span><br><span class="line"># Hex: fb5dd85e7d73f7a08b8e3...4fd9f95beb08d77391</span><br></pre></td></tr></table></figure>
+<p>使用 os.urandom 实际上并不是这里的问题，引入secrets模块的原因是因为人们使用随机模块来生成密码等，即使随机模块不产生密码安全令牌。</p>
+<p>根据文档，随机模块不应用于安全目的， 你应该使用 secrets 或 os.urandom，但 secrets 模块绝对更可取，因为它比较新，并且包含一些用于十六进制令牌的实用程序&#x2F;便利方法以及 URL 安全令牌。</p>
+<p><strong>Zoneinfo 而不是 pytz</strong><br>在 Python 3.9 之前，没有用于时区操作的内置库，所以每个人都在使用 pytz，但现在我们在标准库中有 zoneinfo，所以是时候切换了。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">from datetime import datetime</span><br><span class="line">import pytz  # pip install pytz</span><br><span class="line"></span><br><span class="line">dt = datetime(2022, 6, 4)</span><br><span class="line">nyc = pytz.timezone(&quot;America/New_York&quot;)</span><br><span class="line"></span><br><span class="line">localized = nyc.localize(dt)</span><br><span class="line">print(f&quot;Datetime: &#123;localized&#125;, Timezone: &#123;localized.tzname()&#125;, TZ Info: &#123;localized.tzinfo&#125;&quot;)</span><br><span class="line"></span><br><span class="line"># 新方式:</span><br><span class="line">from zoneinfo import ZoneInfo</span><br><span class="line"></span><br><span class="line">nyc = ZoneInfo(&quot;America/New_York&quot;)</span><br><span class="line">localized = datetime(2022, 6, 4, tzinfo=nyc)</span><br><span class="line">print(f&quot;Datetime: &#123;localized&#125;, Timezone: &#123;localized.tzname()&#125;, TZ Info: &#123;localized.tzinfo&#125;&quot;)</span><br><span class="line"># Datetime: 2022-06-04 00:00:00-04:00, Timezone: EDT, TZ Info: America/New_York</span><br></pre></td></tr></table></figure>
+<p>datetime 模块将所有时区操作委托给抽象基类 datetime.tzinfo， 这个抽象基类需要一个具体的实现——在引入这个很可能来自 pytz 的模块之前。现在我们在标准库中有 zoneinfo，我们可以使用它。</p>
+<p>然而，使用 zoneinfo 有一个警告——它假定系统上有可用的时区数据，UNIX 系统就是这种情况， 如果你的系统没有时区数据，那么你应该使用 tzdata 包，它是由 CPython 核心开发人员维护的第一方库，其中包含 IANA 时区数据库。</p>
+<p><strong>Dataclasses</strong><br>Python 3.7 的一个重要补充是 dataclasses 包，它是 namedtuple 的替代品。</p>
+<p>你可能想知道为什么需要替换 namedtuple？以下是你应该考虑切换到数据类的一些原因：</p>
+<p>1、它可以是可变的<br>2、默认提供 repr、eq、init、hash 魔术方法，<br>3、允许指定默认值，<br>4、支持继承。此外，数据类还支持 frozen 和 slots（从 3.10 开始）属性以提供与命名元组的特征奇偶校验。<br>切换真的不应该太难，因为你只需要更改定义：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"># 老方式:</span><br><span class="line"># from collections import namedtuple</span><br><span class="line">from typing import NamedTuple</span><br><span class="line">import sys</span><br><span class="line"></span><br><span class="line">User = NamedTuple(&quot;User&quot;, [(&quot;name&quot;, str), (&quot;surname&quot;, str), (&quot;password&quot;, bytes)])</span><br><span class="line"></span><br><span class="line">u = User(&quot;John&quot;, &quot;Doe&quot;, b&#x27;tfeL+uD...\xd2&#x27;)</span><br><span class="line">print(f&quot;Size: &#123;sys.getsizeof(u)&#125;&quot;)</span><br><span class="line"># Size: 64</span><br><span class="line"></span><br><span class="line"># 新方式:</span><br><span class="line">from dataclasses import dataclass</span><br><span class="line"></span><br><span class="line">@dataclass()</span><br><span class="line">class User:</span><br><span class="line">   name: str</span><br><span class="line">   surname: str</span><br><span class="line">   password: bytes</span><br><span class="line"></span><br><span class="line">u = User(&quot;John&quot;, &quot;Doe&quot;, b&#x27;tfeL+uD...\xd2&#x27;)</span><br><span class="line"></span><br><span class="line">print(u)</span><br><span class="line"># User(name=&#x27;John&#x27;, surname=&#x27;Doe&#x27;, password=b&#x27;tfeL+uD...\xd2&#x27;)</span><br><span class="line"></span><br><span class="line">print(f&quot;Size: &#123;sys.getsizeof(u)&#125;, &#123;sys.getsizeof(u) + sys.getsizeof(vars(u))&#125;&quot;)</span><br><span class="line"># Size: 48, 152</span><br></pre></td></tr></table></figure>
+<p>在上面的代码中，我们还包含了大小比较，因为这是 namedtuple 和数据类之间的较大差异之一，如上所见，命名元组的大小要小得多，这是由于数据类使用 dict 来表示属性。</p>
+<p>至于速度比较，除非你计划创建数百万个实例，否则属性的访问时间应该基本相同，或者不够重要：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">import timeit</span><br><span class="line"></span><br><span class="line">setup = &#x27;&#x27;&#x27;</span><br><span class="line">from typing import NamedTuple</span><br><span class="line">User = NamedTuple(&quot;User&quot;, [(&quot;name&quot;, str), (&quot;surname&quot;, str), (&quot;password&quot;, bytes)])</span><br><span class="line">u = User(&quot;John&quot;, &quot;Doe&quot;, b&#x27;&#x27;)</span><br><span class="line">&#x27;&#x27;&#x27;</span><br><span class="line"></span><br><span class="line">print(f&quot;Access speed: &#123;min(timeit.repeat(&#x27;u.name&#x27;, setup=setup, number=10000000))&#125;&quot;)</span><br><span class="line"># Access speed: 0.16838401100540068</span><br><span class="line"></span><br><span class="line">setup = &#x27;&#x27;&#x27;</span><br><span class="line">from dataclasses import dataclass</span><br><span class="line"></span><br><span class="line">@dataclass(slots=True)</span><br><span class="line">class User:</span><br><span class="line">  name: str</span><br><span class="line">  surname: str</span><br><span class="line">  password: bytes</span><br><span class="line"></span><br><span class="line">u = User(&quot;John&quot;, &quot;Doe&quot;, b&#x27;&#x27;)</span><br><span class="line">&#x27;&#x27;&#x27;</span><br><span class="line"></span><br><span class="line">print(f&quot;Access speed: &#123;min(timeit.repeat(&#x27;u.name&#x27;, setup=setup, number=10000000))&#125;&quot;)</span><br><span class="line"># Access speed: 0.17728697300481144</span><br></pre></td></tr></table></figure>
+<p>如果以上内容说服了你打算切换到数据类，请尽快尝试吧</p>
+<p>相反，如果你不想切换并且出于某种原因真的想使用命名元组，那么你至少应该使用键入模块而不是collections中的 NamedTuple：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"># 不好方式的:</span><br><span class="line">from collections import namedtuple</span><br><span class="line">Point = namedtuple(&quot;Point&quot;, [&quot;x&quot;, &quot;y&quot;])</span><br><span class="line"></span><br><span class="line"># 更好的方式:</span><br><span class="line">from typing import NamedTuple</span><br><span class="line">class Point(NamedTuple):</span><br><span class="line">    x: float</span><br><span class="line">    y: float</span><br></pre></td></tr></table></figure>
+<p>最后，如果你既不使用 namedtuple 也不使用数据类，你可能需要考虑直接使用 Pydantic。</p>
+<p><strong>Proper Logging 而不是 print</strong><br>这不是标准库的最新添加，但值得使用 - 你应该使用正确的日志记录而不是打印语句， 如果你在本地调试问题，则可以使用 print，但对于任何无需用户干预即可运行的生产就绪程序，正确的日志记录是必须的。</p>
+<p>特别是考虑到设置 Python 日志记录非常简单：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">import logging</span><br><span class="line">logging.basicConfig(</span><br><span class="line">    filename=&#x27;application.log&#x27;,</span><br><span class="line">    level=logging.WARNING,</span><br><span class="line">    format=&#x27;[%(asctime)s] &#123;%(pathname)s:%(lineno)d&#125; %(levelname)s - %(message)s&#x27;,</span><br><span class="line">    datefmt=&#x27;%H:%M:%S&#x27;</span><br><span class="line">)</span><br><span class="line"></span><br><span class="line">logging.error(&quot;Some serious error occurred.&quot;)</span><br><span class="line"># [12:52:35] &#123;&lt;stdin&gt;:1&#125; ERROR - Some serious error occurred.</span><br><span class="line">logging.warning(&#x27;Some warning.&#x27;)</span><br><span class="line"># [12:52:35] &#123;&lt;stdin&gt;:1&#125; WARNING - Some warning.</span><br></pre></td></tr></table></figure>
+<p>与打印语句相比，上面的简单配置将为你提供卓越的调试体验， 最重要的是，你可以进一步自定义日志库以记录到不同的位置、更改日志级别、自动轮换日志等。</p>
+<p><strong>f-strings 而不是 format</strong><br>Python 包含很多格式化字符串的方法，包括 C 样式格式化、f 字符串、模板字符串或 .format 函数， 不过，其中之一 - f-strings - 格式化的字符串文字 ， 它们写起来更自然，可读性更强，并且是前面提到的选项中最快的。</p>
+<p>因此，我认为没有必要争论或解释为什么要使用它们，然而，在某些情况下不能使用 f 字符串：</p>
+<p>使用 % 格式的唯一原因是用于记录：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">import logging</span><br><span class="line"></span><br><span class="line">things = &quot;something happened...&quot;</span><br><span class="line"></span><br><span class="line">logger = logging.getLogger(__name__)</span><br><span class="line">logger.error(&quot;Message: %s&quot;, things)  # 评估内部记录器方法</span><br><span class="line">logger.error(f&quot;Message: &#123;things&#125;&quot;)  # 立即评估</span><br></pre></td></tr></table></figure>
+<p>在上面的示例中，如果你使用 f 字符串，则表达式将立即计算，而使用 C 样式格式，替换将被推迟到实际需要时，这对于消息分组很重要，其中具有相同模板的所有消息都可以记录为一个， 这不适用于 f 字符串，因为模板在传递给记录器之前填充了数据。</p>
+<p>此外，有些事情是 f-strings 根本无法做到的， 例如在运行时填充模板 - 即动态格式 - 这就是 f-strings 被称为文字字符串格式的原因：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"># 动态设置模板及其参数</span><br><span class="line">def func(tpl: str, param1: str, param2: str) -&gt; str:</span><br><span class="line">    return tpl.format(param=param1, param2=param2)</span><br><span class="line"></span><br><span class="line">some_template = &quot;First template: &#123;param1&#125;, &#123;param2&#125;&quot;</span><br><span class="line">another_template = &quot;Other template: &#123;param1&#125; and &#123;param2&#125;&quot;</span><br><span class="line">print(func(some_template, &quot;Hello&quot;, &quot;World&quot;))</span><br><span class="line">print(func(another_template, &quot;Hello&quot;, &quot;Python&quot;))</span><br><span class="line"></span><br><span class="line"># 动态重用具有不同参数的相同模板.</span><br><span class="line">inputs = [&quot;Hello&quot;, &quot;World&quot;, &quot;!&quot;]</span><br><span class="line">template = &quot;Here&#x27;s some dynamic value: &#123;value&#125;&quot;</span><br><span class="line"></span><br><span class="line">for value in inputs:</span><br><span class="line">    print(template.format(value=value))</span><br></pre></td></tr></table></figure>
+<p>最重要的是，尽可能使用 f 字符串，因为它们更具可读性和更高性能，但请注意，在某些情况下仍然首选和&#x2F;或需要其他格式样式。</p>
+<p><strong>Tomllib 而不是 tomli</strong><br>TOML 是一种广泛使用的配置格式，对于 Python 的工具和生态系统尤其重要，因为它用于 pyproject.toml 配置文件， 到目前为止，你必须使用外部库来管理 TOML 文件，但是从 Python 3.11 开始，将有一个名为 tomllib 的内置库，它基于 toml 包。</p>
+<p>所以，一旦你切换到 Python 3.11，你应该养成使用 import tomllib 而不是 import tomli 的习惯。少了一种需要担心的依赖！</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"># import tomli as tomllib</span><br><span class="line">import tomllib</span><br><span class="line"></span><br><span class="line">with open(&quot;pyproject.toml&quot;, &quot;rb&quot;) as f:</span><br><span class="line">    config = tomllib.load(f)</span><br><span class="line">    print(config)</span><br><span class="line">    # &#123;&#x27;project&#x27;: &#123;&#x27;authors&#x27;: [&#123;&#x27;email&#x27;: &#x27;contact@martinheinz.dev&#x27;,</span><br><span class="line">    #                           &#x27;name&#x27;: &#x27;Martin Heinz&#x27;&#125;],</span><br><span class="line">    #              &#x27;dependencies&#x27;: [&#x27;flask&#x27;, &#x27;requests&#x27;],</span><br><span class="line">    #              &#x27;description&#x27;: &#x27;Example Package&#x27;,</span><br><span class="line">    #              &#x27;name&#x27;: &#x27;some-app&#x27;,</span><br><span class="line">    #              &#x27;version&#x27;: &#x27;0.1.0&#x27;&#125;&#125;</span><br><span class="line"></span><br><span class="line">toml_string = &quot;&quot;&quot;</span><br><span class="line">[project]</span><br><span class="line">name = &quot;another-app&quot;</span><br><span class="line">description = &quot;Example Package&quot;</span><br><span class="line">version = &quot;0.1.1&quot;</span><br><span class="line">&quot;&quot;&quot;</span><br><span class="line"></span><br><span class="line">config = tomllib.loads(toml_string)</span><br><span class="line">print(config)</span><br><span class="line"># &#123;&#x27;project&#x27;: &#123;&#x27;name&#x27;: &#x27;another-app&#x27;, &#x27;description&#x27;: &#x27;Example Package&#x27;, &#x27;version&#x27;: &#x27;0.1.1&#x27;&#125;&#125;</span><br><span class="line">Setuptools 而不是  distutils</span><br></pre></td></tr></table></figure>
+<p>最后一个更像是弃用通知：</p>
+<p>由于 Distutils 已弃用，因此同样不鼓励使用任何来自 distutils 的函数或对象，Setuptools 旨在替换或弃用所有此类用途。</p>
+<p>是时候告别 distutils 包并切换到 setuptools 了，setuptools 文档提供了有关如何替换 distutils 用法的指导， 除此之外，PEP 632 还为 setuptools 未涵盖的部分 distutils 提供迁移建议。</p>
+<p><strong>总结</strong><br>每个新的 Python 版本都会带来新的特性，因此我建议你查看 Python 发行说明中的“新模块”、“不推荐使用的模块”和“已删除的模块”部分，这是了解 Python 标准重大变化的好方法 ， 通过这种方式，你可以不断地将新功能和最佳实践整合到你的项目中。</p>
 
     
 
@@ -319,7 +328,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">UML</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Python</a>
         		</li>
       		
 		</ul>
@@ -375,7 +384,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-     <!-- <img src="//pan.baidu.com/share/qrcode?url=https://longchao012.github.io/2022/08/24/%E5%B0%8F%E6%A1%88%E4%BE%8B%EF%BC%9A%E5%88%B6%E4%BD%9C%E3%80%8A%E6%95%B0%E6%8D%AE%E6%B5%81%E5%9B%BE%E3%80%8B%E4%B8%8E%E3%80%8A%E4%B8%9A%E5%8A%A1%E6%B5%81%E7%A8%8B%E5%9B%BE%E3%80%8B/" alt="微信分享二维码"> -->
+     <!-- <img src="//pan.baidu.com/share/qrcode?url=https://longchao012.github.io/2022/08/31/%E5%87%A0%E4%B8%AA%E6%96%B0%E7%9A%84%E5%B8%B8%E7%94%A8Python%E5%BA%93%EF%BC%8C%E6%97%A7%E7%9A%84%E5%8F%AF%E4%BB%A5%E6%B7%98%E6%B1%B0%E4%BA%86/" alt="微信分享二维码"> -->
     </div>
 </div>
 
@@ -390,18 +399,9 @@
 
 <nav id="article-nav">
   
-    <a href="/2022/08/26/%E5%87%A0%E7%A7%8D%E5%A5%BD%E7%94%A8%E7%9A%84%E6%95%B0%E6%8D%AE%E8%BF%81%E7%A7%BB%E5%B7%A5%E5%85%B7/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          几种好用的数据迁移工具
-        
-      </div>
-    </a>
   
-  
-    <a href="/2022/08/23/%E5%9F%BA%E4%BA%8EUiBot%E7%9A%84%E6%BB%91%E5%8A%A8%E9%AA%8C%E8%AF%81%E7%A0%81%E6%A3%80%E6%B5%8B%E5%AE%9E%E4%BE%8B/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">基于UiBot的滑动验证码检测实例</div>
+    <a href="/2022/08/28/Python%E4%B8%AD%E5%B8%B8%E7%94%A8%E7%9A%84%20pip%20%E5%91%BD%E4%BB%A4/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Python中常用的 pip 命令</div>
       <i class="icon-circle-right"></i>
     </a>
   
