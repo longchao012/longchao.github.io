@@ -10,7 +10,7 @@ https://longchao012.github.io/2022/08/24/%E5%B0%8F%E6%A1%88%E4%BE%8B%EF%BC%9A%E5
 https://longchao012.github.io/2022/07/15/hello-world/
 https://longchao012.github.io/
 https://longchao012.github.io/tags/Python/
-https://longchao012.github.io/tags/UML/
-https://longchao012.github.io/tags/MySQL/
-https://longchao012.github.io/tags/RPA%E5%8A%9E%E5%85%AC%E8%87%AA%E5%8A%A8%E5%8C%96/
 https://longchao012.github.io/tags/%E6%95%B0%E6%8D%AE%E8%BF%81%E7%A7%BB/
+https://longchao012.github.io/tags/RPA%E5%8A%9E%E5%85%AC%E8%87%AA%E5%8A%A8%E5%8C%96/
+https://longchao012.github.io/tags/MySQL/
+https://longchao012.github.io/tags/UML/

@@ -108,14 +108,7 @@
   </url>
   
   <url>
-    <loc>https://longchao012.github.io/tags/UML/</loc>
-    <lastmod>2023-09-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://longchao012.github.io/tags/MySQL/</loc>
+    <loc>https://longchao012.github.io/tags/%E6%95%B0%E6%8D%AE%E8%BF%81%E7%A7%BB/</loc>
     <lastmod>2023-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -129,7 +122,14 @@
   </url>
   
   <url>
-    <loc>https://longchao012.github.io/tags/%E6%95%B0%E6%8D%AE%E8%BF%81%E7%A7%BB/</loc>
+    <loc>https://longchao012.github.io/tags/MySQL/</loc>
+    <lastmod>2023-09-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://longchao012.github.io/tags/UML/</loc>
     <lastmod>2023-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
