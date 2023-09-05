@@ -210,6 +210,188 @@
             
 
   
+    <article id="post-单表100万数据，写入、更新、读取、删除速度的测试验证！" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+  
+  
+    <h1 itemprop="name">
+	
+	  <a class="article-title" href="/2022/08/21/%E5%8D%95%E8%A1%A8100%E4%B8%87%E6%95%B0%E6%8D%AE%EF%BC%8C%E5%86%99%E5%85%A5%E3%80%81%E6%9B%B4%E6%96%B0%E3%80%81%E8%AF%BB%E5%8F%96%E3%80%81%E5%88%A0%E9%99%A4%E9%80%9F%E5%BA%A6%E7%9A%84%E6%B5%8B%E8%AF%95%E9%AA%8C%E8%AF%81%EF%BC%81/" target="_blank">基于Java的单表100万数据，写入、更新、读取、删除速度的测试验证！</a>
+  
+    </h1>
+  
+
+
+  
+  
+<a href="/2022/08/21/%E5%8D%95%E8%A1%A8100%E4%B8%87%E6%95%B0%E6%8D%AE%EF%BC%8C%E5%86%99%E5%85%A5%E3%80%81%E6%9B%B4%E6%96%B0%E3%80%81%E8%AF%BB%E5%8F%96%E3%80%81%E5%88%A0%E9%99%A4%E9%80%9F%E5%BA%A6%E7%9A%84%E6%B5%8B%E8%AF%95%E9%AA%8C%E8%AF%81%EF%BC%81/" class="archive-article-date">
+        <time datetime="2022-08-21T06:39:15.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-08-21</time>
+</a>
+
+  
+  
+    
+
+  
+  </header>
+  
+  <div class="article-entry" itemprop="articleBody">
+    
+    <p>本文将通过简单干净的实践方式，向读者展示在使用不同连接池以及不使用连接池的情况下，SpringBoot应用程序对接MySQL进行增删改查的性能对比。同时，还将探讨更新和查询时索引字段的关键性。</p>
+<p>在开始之前，让我们先来思考一个问题：一张拥有21个字段的表，存放着100万条数据，会占用多少空间容量？如果这100万条数据在不使用连接池的方式下，以10个并发每条一条插入，需要多长时间？</p>
+<p>根据经验，问题1大约需要350MB左右的空间容量，而问题2可能需要2到3小时的时间。尽管这些数字可能因机器配置而异，但重要的是你可以亲自验证它们。本文将使用ApacheBench对MySQL连接池进行压测，帮助读者更好地了解相关知识。</p>
+<p>通过这个实践，我们可以得出结论：在使用连接池的情况下，SpringBoot应用程序对接MySQL的性能明显优于不使用连接池的情况。无论是插入、删除、更新还是查询操作，连接池都能够显著减少等待时间和资源消耗。</p>
+<p>此外，索引字段在更新和查询时起着关键的作用。合适的索引可以提高查询效率并减少扫描的数据量。因此，在设计数据库结构时，我们应该仔细考虑如何合理地使用索引。</p>
+<p>希望本文能够帮助读者更好地理解SpringBoot应用程序对接MySQL时连接池的重要性以及性能优化的方法。通过实践和实验，我们可以更加深入地了解并应用这些知识。</p>
+    
+    <a class="article-more-a" href="/2022/08/21/%E5%8D%95%E8%A1%A8100%E4%B8%87%E6%95%B0%E6%8D%AE%EF%BC%8C%E5%86%99%E5%85%A5%E3%80%81%E6%9B%B4%E6%96%B0%E3%80%81%E8%AF%BB%E5%8F%96%E3%80%81%E5%88%A0%E9%99%A4%E9%80%9F%E5%BA%A6%E7%9A%84%E6%B5%8B%E8%AF%95%E9%AA%8C%E8%AF%81%EF%BC%81/#more">more >></a>
+    
+    
+
+    
+
+    
+
+  </div>
+  <div class="article-info article-info-index">
+    
+    
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">MySQL</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+    
+
+    
+    <p class="article-more-link">
+      <a class="article-more-a" href="/2022/08/21/%E5%8D%95%E8%A1%A8100%E4%B8%87%E6%95%B0%E6%8D%AE%EF%BC%8C%E5%86%99%E5%85%A5%E3%80%81%E6%9B%B4%E6%96%B0%E3%80%81%E8%AF%BB%E5%8F%96%E3%80%81%E5%88%A0%E9%99%A4%E9%80%9F%E5%BA%A6%E7%9A%84%E6%B5%8B%E8%AF%95%E9%AA%8C%E8%AF%81%EF%BC%81/">展开全文 >></a>
+    </p>
+    
+
+    
+    <div class="clearfix"></div>
+  </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-基于UiBot开发的RPA项目银行流水下载流程" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+  
+  
+    <h1 itemprop="name">
+	
+	  <a class="article-title" href="/2022/08/16/%E5%9F%BA%E4%BA%8EUiBot%E5%BC%80%E5%8F%91%E7%9A%84RPA%E9%A1%B9%E7%9B%AE%E9%93%B6%E8%A1%8C%E6%B5%81%E6%B0%B4%E4%B8%8B%E8%BD%BD%E6%B5%81%E7%A8%8B/" target="_blank">基于UiBot开发的RPA项目各类银行操作流程(银行流水下载、自动填写付款单等)</a>
+  
+    </h1>
+  
+
+
+  
+  
+<a href="/2022/08/16/%E5%9F%BA%E4%BA%8EUiBot%E5%BC%80%E5%8F%91%E7%9A%84RPA%E9%A1%B9%E7%9B%AE%E9%93%B6%E8%A1%8C%E6%B5%81%E6%B0%B4%E4%B8%8B%E8%BD%BD%E6%B5%81%E7%A8%8B/" class="archive-article-date">
+        <time datetime="2022-08-16T02:10:22.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-08-16</time>
+</a>
+
+  
+  
+    
+
+  
+  </header>
+  
+  <div class="article-entry" itemprop="articleBody">
+    
+    <p>基于UiBot开发的RPA项目银行流水下载流程<br>做过很多关于银行相关的RPA项目，本次主要以UIBot这个工具来实施的银行相关RPA项目。使用的UiBot Creator 5.6的版本，后续更新为6.0版本。涉及的银行有中国银行，工商银行，民生银行，光大银行，农业银行等多少银行。有通过C&#x2F;S访问的，也有通过B&#x2F;S访问的。客户方面都没有做太多的限制，能满足业务需要即可。开发的周期，看业务需求的范围与数据结构的复杂度。如果有对账，数据转换等需求的项目可能时间会相对长一点，如果只是单纯的下载流水或填写付款单等待，那基本会很快，时间可以控制在一到两周以内。<br>目前为止。接受到的需求主要有以下几种：<br>1.流水查询(一般会跟着有有自动对账需求)<br>2.付款单填写<br>总体来说，就是资金的借与贷的变化。除此无它！</p>
+<p>那么我们开发的过程中可能会遇到什么问题呢？</p>
+    
+    <a class="article-more-a" href="/2022/08/16/%E5%9F%BA%E4%BA%8EUiBot%E5%BC%80%E5%8F%91%E7%9A%84RPA%E9%A1%B9%E7%9B%AE%E9%93%B6%E8%A1%8C%E6%B5%81%E6%B0%B4%E4%B8%8B%E8%BD%BD%E6%B5%81%E7%A8%8B/#more">more >></a>
+    
+    
+
+    
+
+    
+
+  </div>
+  <div class="article-info article-info-index">
+    
+    
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">RPA办公自动化</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+    
+
+    
+    <p class="article-more-link">
+      <a class="article-more-a" href="/2022/08/16/%E5%9F%BA%E4%BA%8EUiBot%E5%BC%80%E5%8F%91%E7%9A%84RPA%E9%A1%B9%E7%9B%AE%E9%93%B6%E8%A1%8C%E6%B5%81%E6%B0%B4%E4%B8%8B%E8%BD%BD%E6%B5%81%E7%A8%8B/">展开全文 >></a>
+    </p>
+    
+
+    
+    <div class="clearfix"></div>
+  </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-我们应该从哪些方面思考公司场景是否适合RPA流程自动化" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
