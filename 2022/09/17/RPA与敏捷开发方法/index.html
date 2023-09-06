@@ -6,23 +6,24 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://longchao012.github.io">
-  <title>Hexo</title>
+  <title>RPA与敏捷开发方法 | Hexo</title>
   <meta name="generator" content="hexo-theme-yilia-plus">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-    
-    <!-- <meta name="keywords" content="">
-    <meta name="description" content="欢迎来到小站！技术是第一生产力"> -->
-  
-  <meta name="description" content="欢迎来到小站！技术是第一生产力">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="https://longchao012.github.io/index.html">
+  <meta name="description" content="与传统自动化相比，RPA（Robotic Process Automation）不仅易于使用且实施成本更低，成效明显。据数据显示，RPA可以将运营成本平均降低25-50%。随着RPA与AI、流程挖掘等技术的融合，应用场景不断增多，使得RPA成为企业追捧的自动化技术。然而，RPA存在脆弱性挑战业务流程稳定性的问题。为防止拓展RPA带来的挑战和失败，一些有想法的杰出人士采用敏捷方法来实施和推动自动">
+<meta property="og:type" content="article">
+<meta property="og:title" content="RPA与敏捷开发方法">
+<meta property="og:url" content="https://longchao012.github.io/2022/09/17/RPA%E4%B8%8E%E6%95%8F%E6%8D%B7%E5%BC%80%E5%8F%91%E6%96%B9%E6%B3%95/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="欢迎来到小站！技术是第一生产力">
+<meta property="og:description" content="与传统自动化相比，RPA（Robotic Process Automation）不仅易于使用且实施成本更低，成效明显。据数据显示，RPA可以将运营成本平均降低25-50%。随着RPA与AI、流程挖掘等技术的融合，应用场景不断增多，使得RPA成为企业追捧的自动化技术。然而，RPA存在脆弱性挑战业务流程稳定性的问题。为防止拓展RPA带来的挑战和失败，一些有想法的杰出人士采用敏捷方法来实施和推动自动">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://longchao012.github.io/images/RPA%E4%B8%8E%E6%95%8F%E6%8D%B7%E5%BC%80%E5%8F%91%E6%96%B9%E6%B3%95.jpg">
+<meta property="article:published_time" content="2022-09-17T09:23:58.000Z">
+<meta property="article:modified_time" content="2023-09-06T06:51:03.729Z">
 <meta property="article:author" content="龙超小站">
+<meta property="article:tag" content="RPA办公自动化">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://longchao012.github.io/images/RPA%E4%B8%8E%E6%95%8F%E6%8D%B7%E5%BC%80%E5%8F%91%E6%96%B9%E6%B3%95.jpg">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -207,113 +208,25 @@
               class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-
-  
-    <article id="post-MySQL主从服务的配置及其中可能会遇到的问题" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+            <article id="post-RPA与敏捷开发方法" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
   
   
-    <h1 itemprop="name">
-	
-	  <a class="article-title" href="/2022/09/18/MySQL%E4%B8%BB%E4%BB%8E%E6%9C%8D%E5%8A%A1%E7%9A%84%E9%85%8D%E7%BD%AE%E5%8F%8A%E5%85%B6%E4%B8%AD%E5%8F%AF%E8%83%BD%E4%BC%9A%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/" target="_blank">MySQL主从服务的配置及其中可能会遇到的问题</a>
-  
+    <h1 class="article-title" itemprop="name">
+      RPA与敏捷开发方法
     </h1>
   
 
 
   
   
-<a href="/2022/09/18/MySQL%E4%B8%BB%E4%BB%8E%E6%9C%8D%E5%8A%A1%E7%9A%84%E9%85%8D%E7%BD%AE%E5%8F%8A%E5%85%B6%E4%B8%AD%E5%8F%AF%E8%83%BD%E4%BC%9A%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/" class="archive-article-date">
-        <time datetime="2022-09-18T06:51:12.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-09-18</time>
-</a>
-
-  
-  
-    
-
-  
-  </header>
-  
-  <div class="article-entry" itemprop="articleBody">
-    
-    <p>最近做了一次数据库的主从配置管理，把其中的主要操作的技术点还有过程中可能会遇到的问题在此记录一下，以备后需。</p>
-    
-    <a class="article-more-a" href="/2022/09/18/MySQL%E4%B8%BB%E4%BB%8E%E6%9C%8D%E5%8A%A1%E7%9A%84%E9%85%8D%E7%BD%AE%E5%8F%8A%E5%85%B6%E4%B8%AD%E5%8F%AF%E8%83%BD%E4%BC%9A%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/#more">more >></a>
-    
-    
-
-    
-
-    
-
-  </div>
-  <div class="article-info article-info-index">
-    
-    
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">MySQL</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-    
-
-    
-    <p class="article-more-link">
-      <a class="article-more-a" href="/2022/09/18/MySQL%E4%B8%BB%E4%BB%8E%E6%9C%8D%E5%8A%A1%E7%9A%84%E9%85%8D%E7%BD%AE%E5%8F%8A%E5%85%B6%E4%B8%AD%E5%8F%AF%E8%83%BD%E4%BC%9A%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/">展开全文 >></a>
-    </p>
-    
-
-    
-    <div class="clearfix"></div>
-  </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
         
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
+        <span id="busuanzi_container_page_pv" style='display:none' class="archive-article-date">
+              <i class="icon-smile icon"></i> 阅读数：<span id="busuanzi_value_page_pv"></span>次
+        </span>
 
-
-
-
-  
-    <article id="post-RPA与敏捷开发方法" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-  
-  
-    <h1 itemprop="name">
-	
-	  <a class="article-title" href="/2022/09/17/RPA%E4%B8%8E%E6%95%8F%E6%8D%B7%E5%BC%80%E5%8F%91%E6%96%B9%E6%B3%95/" target="_blank">RPA与敏捷开发方法</a>
-  
-    </h1>
-  
-
-
-  
-  
 <a href="/2022/09/17/RPA%E4%B8%8E%E6%95%8F%E6%8D%B7%E5%BC%80%E5%8F%91%E6%96%B9%E6%B3%95/" class="archive-article-date">
         <time datetime="2022-09-17T09:23:58.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-09-17</time>
 </a>
@@ -321,6 +234,27 @@
   
   
     
+<div style="margin-top:10px;">
+  <span class="post-time">
+    <span class="post-meta-item-icon">
+      <!-- fonts.scss -->
+      <!-- 百度字体平台:http://fontstore.baidu.com/static/editor/index.html -->
+      <i class="icon-statistics"></i>
+      <span class="post-meta-item-text"> 字数统计:</span>
+      <span class="post-count">4k字</span>
+    </span>
+  </span>
+
+  <span class="post-time">
+    &nbsp; | &nbsp;
+    <span class="post-meta-item-icon">
+      <i class="icon-book icon"></i>
+      <span class="post-meta-item-text"> 阅读时长≈</span>
+      <span class="post-count">13分</span>
+    </span>
+  </span>
+</div>
+
 
   
   </header>
@@ -328,99 +262,65 @@
   <div class="article-entry" itemprop="articleBody">
     
     <p>  与传统自动化相比，RPA（Robotic Process Automation）不仅易于使用且实施成本更低，成效明显。据数据显示，RPA可以将运营成本平均降低25-50%。随着RPA与AI、流程挖掘等技术的融合，应用场景不断增多，使得RPA成为企业追捧的自动化技术。然而，RPA存在脆弱性挑战业务流程稳定性的问题。为防止拓展RPA带来的挑战和失败，一些有想法的杰出人士采用敏捷方法来实施和推动自动化计划。实践证明，敏捷方法使RPA在业务中获得更好的治理、更灵活的扩展能力、效率和降低成本，减轻实施风险和返工。因此，敏捷方法实话的RPA成为一种更高效的RPA应用与实施方法结合架构。</p>
-    
-    <a class="article-more-a" href="/2022/09/17/RPA%E4%B8%8E%E6%95%8F%E6%8D%B7%E5%BC%80%E5%8F%91%E6%96%B9%E6%B3%95/#more">more >></a>
-    
-    
+<span id="more"></span>
 
-    
+<p><strong>从敏捷开发说起</strong><br>在软件开发领域，传统的瀑布模型需要很长时间才能完成整个流程，而且风险高、难以应对变化。于是，2001年17位知名开发人员聚集在一起讨论替代瀑布模型的新方法，最终形成了敏捷宣言和敏捷联盟。</p>
+<p>敏捷开发是一种“轻量级”的迭代模型，强调协作和即时性，增加客户参与度，并将软件开发从面向过程转变为面向对象。它与瀑布模型有着明显的区别。</p>
+<p>敏捷开发以用户的需求进化为核心，采用迭代、循序渐进的方法进行软件开发。它将一个大项目分为多个相互联系的小项目（冲刺），并在整个项目生命周期中不断评估需求、计划和结果，使变更成为流程的有机组成部分。</p>
+<p>总之，敏捷开发旨在解决瀑布模型存在的问题，用一种轻量、敏捷的方法来改善或替代传统的重型软件开发方法。</p>
+<p>敏捷开发的核心价值观强调个体和互动优于流程和工具，工作的软件高于详尽的文档，客户合作高于合同谈判，响应变化高于遵循计划。这些价值观重视协作和即时性，增加客户参与度，并将软件开发从面向过程转变为面向对象。</p>
+<p>在敏捷开发中，软件项目被切分成多个子项目，每个子项目都经过测试，具备可视、可集成和可运行使用的特征。这意味着一个大项目被分为可独立运行的小项目，并且在整个项目生命周期中不断评估需求、计划和结果，使变更成为流程的有机组成部分。</p>
+<p>与传统的瀑布模型相比，敏捷开发更加灵活和适应变化。它侧重于快速交付有价值的软件，通过持续反馈和迭代改进来满足客户需求。敏捷开发能够更好地应对市场和技术的变化，提高项目的成功率和效率。</p>
+<p>总而言之，敏捷开发是一种注重协作、适应性和客户参与的软件开发方法。它通过迭代和循序渐进的方式，将大型项目分解为小而可行的增量，以提供更快速、高质量且符合客户需求的软件产品。<br><img src="/images/RPA%E4%B8%8E%E6%95%8F%E6%8D%B7%E5%BC%80%E5%8F%91%E6%96%B9%E6%B3%95.jpg" alt="docker安装"></p>
+<p><strong>敏捷RPA与敏捷交付</strong><br>虽然很多RPA开发者没有编程基础，但他们也参与了软件开发过程，所以仍然需要遵守一定的开发逻辑。与传统软件开发不同，RPA和技术简化了程序开发过程，因此更加注重交付。由于对自动化和开发平台的理解不同，不同业务线开发的自动化程序在逻辑上会有一些差异，可能会降低稳定性并增加脆弱性。</p>
+<p>大量的业务人员并行开发会导致大量的自动化程序。这些程序能否高质量交付，或者如何保障高效交付，成为自动化程序交付的主要问题。现在敏捷开发已成为主流，受到主流RPA厂商的影响，RPA也在摒弃传统的瀑布式开发模式，向敏捷开发靠拢。这诞生了敏捷RPA（Agile RPA）。</p>
+<p>敏捷RPA不是一个过程，而是一种价值观。它通过一些轻量级流程框架和操作技术的支持，帮助RPA团队将这种价值观付诸实践。执行敏捷开发和成为敏捷组织是有区别的：前者关注过程和技术，后者则由敏捷原则和价值观指导行为。</p>
+<p>敏捷交付是迭代式和增量式交付的组合。为实现某个业务流程的自动化进行的增量交付可能意味着一个接一个地自动化一些流程组件。而迭代交付则意味着以低保真度自动化所有流程组件，然后逐渐提高其自动化保真度，并自动化其他流程组件和下一个版本。</p>
+<p>在敏捷RPA交付中，关键是经常生产“工作机器人”，为利益相关者创造价值的最终自动化业务流程的子集。需要注意的是，在敏捷RPA交付中，没有什么是真正被认为是最终的，因为可以在功能、性能、可靠性、稳定性、安全性、可用性等方面不断拓展自动化。因此，敏捷RPA交付的目标不是要完美，而是要逐渐减少无意义的开发行为。</p>
+<p><strong>为什么RPA需要敏捷方法?</strong></p>
+<p>根据调查数据，78%的实施了RPA的公司预计在未来3年内增加投资。但是只有很少的公司能够将RPA扩展到初始试点之外。维护工作是阻止公司扩展RPA的主要原因之一。导致机器人中断运行并持续投入维护的三个主要原因是自动化本身的问题、应用程序问题和环境问题。<br>在当前的技术环境中，机器人流程自动化（RPA）已经成为了许多企业日常运营的重要部分。然而，有时候我们可能会遇到RPA机器人中断运行并需要持续投入维护的情况。这种情况的出现可能由多种原因引起，以下将详细解析其中的三个主要原因：</p>
+<ul>
+<li><p><strong>1. 自动化本身的问题</strong><br>首先，自动化本身的问题也是导致RPA机器人中断运行的一个重要原因。这可能包括程序设计错误、算法问题、或者是系统内部的错误。例如，如果一个RPA机器人被编程为在特定的条件下执行某个任务，但是这个条件在某些情况下并不满足，那么机器人就可能会中断运行。此外，如果RPA机器人的算法存在缺陷或者设计不合理，也可能导致其无法正常运行。这些问题通常需要开发者对RPA机器人进行详细的检查和修复。</p>
+</li>
+<li><p><strong>2. 应用程序问题</strong><br>其次，应用程序问题也是导致RPA机器人中断运行的一个重要因素。这可能涉及到应用程序的稳定性、兼容性以及与RPA机器人的交互性等问题。例如，如果RPA机器人正在运行的应用程序发生了严重的错误或者崩溃，那么RPA机器人可能也会因此中断运行。此外，如果应用程序与RPA机器人的接口设计不合理，或者存在难以预料的交互问题，也可能使RPA机器人无法正常工作。解决这类问题通常需要对应用程序进行深入的分析和调试。</p>
+</li>
+<li><p><strong>3. 环境问题</strong><br>最后，环境问题也可能是导致RPA机器人中断运行的一个重要原因。这可能包括硬件故障、网络问题、或者是系统资源不足等。例如，如果RPA机器人所在的服务器发生故障，或者网络连接不稳定，那么RPA机器人可能就无法正常运行。此外，如果系统资源（如内存、CPU或磁盘空间）不足，也可能导致RPA机器人无法正常运行。解决这类问题通常需要对环境进行全面的检查和优化。</p>
+</li>
+</ul>
+<p>如果忽视这些问题，RPA项目可能会失败或者无法实现更高的ROI。事实上，已经上线几个月后需要重新设计的RPA项目并不少见，因为不可预见的问题引发了RPA实施的复杂性。如果这些项目在立项之初就能遵循敏捷原则，可以避免很多问题不至于重新设计。</p>
+<p>对于RPA项目而言，敏捷方法有很多好处。首先，敏捷方法要求创建跨职能团队，打破孤岛并促进业务&#x2F;IT协调，这是 RPA 成功的必要条件。其次，RPA相当脆弱，对变化反应不佳。与传统方法不同，敏捷方法为实施后的持续、迭代更改和升级留出了更多空间。第三，敏捷提供了在整个企业中扩展RPA和智能自动化所需的治理框架。在这些场景中，组织可以采用类似工厂的方法来实施由可重用组件、工作流、标准和指南、工具和参考实施组成的 RPA。这种方法不仅成本高、劳动效率高，而且还能带来更高质量和更安全的 RPA 应用程序。</p>
+<p>RPA的目标是通过消除重复的、低价值的任务以增强人类工作体验，因此它必须与最终用户共同实施。这个逻辑，与敏捷方法鼓励的尽早并经常与利益相关者密切合作不谋而合。此外，RPA的开发难度正在降低，使敏捷开发更加可行。</p>
+<p><strong>敏捷开发方法怎样让RPA项目更成功?</strong></p>
+<p>RPA与纯软件和产品开发有很大不同，但是可以借鉴和应用基本的敏捷原则来产生相同的结果：更快地交付价值，同时降低成本和风险。</p>
+<p>流程不是产品，不能与纯软件开发相同的方式开发和部署，因此敏捷RPA不能遵循敏捷Scrum框架（迭代式增量软件开发过程，敏捷方法论中的重要框架之一）里的每一条原则。</p>
+<p>但是，敏捷Scrum方法的各种元素可以为有远见的组织提供更多红利，大家可以借鉴敏捷开发的方法与逻辑，加速规模并建立RPA卓越中心（CoE）以及相似的组织，以保障自动化能够更高效的助力企业提质增效降本。</p>
+<p>敏捷方法，至少可以让组织在RPA实施过程中做到以下几点：</p>
+<ul>
+<li><p><strong>更懂协作的团队。</strong>RPA 的敏捷方法包含一个由不同利益相关者组成的专门团队，他们紧密合作，包括开发人员、测试人员和业务角色。这不仅增强了识别 RPA 机会的有效性，而且还促进了大规模治理，因为专门的团队可以更好地管理和协调影响业务和运营不同部分的自动化流程。</p>
+</li>
+<li><p><strong>更优质的设计和定义。</strong>在机器人流程自动化的敏捷方法中，业务流程在任何开发开始之前就被设计和优化。这使大型组织能够完全标准化和优化端到端、复杂和多层的业务流程，成为真正的自动化投资回报率所在。</p>
+</li>
+</ul>
+<p>它还为他们提供了宝贵的机会来考虑这些流程并将其与更大的业务目标和企业或监管约束、政策和控制联系起来。</p>
+<p>自动化基本的战术流程要简单得多，但从长远来看，其价值回报率也会显着降低。大规模阻碍 RPA 的主要障碍是自动化更复杂的流程并确保透明有效地遵守法规。促进预先定义和设计以确保优化和法规遵从性的方法极大地使有意愿的企业能够克服这一挑战</p>
+<ul>
+<li><strong>更高效的积压维护。</strong>要扩展 RPA，机器人必须变得更大、更复杂。积压工作能够让组织将复杂的端到端流程分割成多个工作项或故事，并将它们作为积压工作独立地确定优先级。</li>
+</ul>
+<p>积压也是有效管理机器人维护的关键。随着许多机器人和不断发生的变化，维护工作可能会消耗积压并扼杀提供价值和创新的新项目。因此，有组织的优先排序方法至关重要。</p>
+<ul>
+<li><strong>冲刺计划和回顾。</strong>与在项目开始时定义的时间表不同，计划短暂的工作突增或冲刺使团队能够在出现需要解决的问题时重新确定工作的优先级。而不是在项目结束时意识到不对劲，导致返工并因此增加成本。</li>
+</ul>
+<p>Sprint回顾还可以使团队能够随着工作的进展吸取经验教训，并将其融入整个 RPA 工作中，进而避免在下游犯下相同的错误并及时实施良好实践。</p>
+<p><strong>后记：因人而异择优而选</strong></p>
+<p>看到这里，大家应该对敏捷RPA有了一定的了解。关于敏捷RPA，很多人看完可能会感觉非常复杂。其实想要实现敏捷RPA也很简单，就是建立RPA卓越中心，然后告诉RPA CoE管理者要引入敏捷方法，并坚定不移的支持其工作就可以了。</p>
+<p>但说起来容易做起来难，因为要改变大型组织固有的IT组织架构及开发逻辑，着实是一个难上加难的问题。</p>
+<p>所以，这篇文章的用意，并不是告诉大家在RPA建设与应用上一定要严格遵守敏捷方法，而是说在RPA引入时可以适当参考敏捷方法，以避免在后面的RPA应用中出现太多问题而导致项目搁浅，同时也为基于自动化获得更高的ROI打下更好的基础。</p>
+<p>同时大家也应该知道，每个组织的信息化程度不同，IT建设情况不同，程序开发的理念也不同，这就决定了不是每个组织都适合采用敏捷方法进行各种项目开发。</p>
+<p>敏捷RPA交付有许多好处，但它也带有敏捷方法固有的某些风险。因此敏捷方法并不适合每个组织，这取决于组织的情况以及如何下定决心克服困难去采用敏捷。如果参与RPA交付的人员不愿意紧密协作，很可能以敏捷的方式工作会成为一场IT与流程变革的灾难。</p>
+<p>所以，在敏捷方法与RPA项目上，不要将敏捷实践和原则强加给那些不愿采用敏捷的人，只需要给人们正确的信息让他们说服自己。</p>
+<p>也不要试图说服别人，只需要告诉并解释敏捷能够带来了什么就可以了。</p>
+<p><strong>剩下的，全部交给决策者。</strong></p>
 
-    
-
-  </div>
-  <div class="article-info article-info-index">
-    
-    
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">RPA办公自动化</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-    
-
-    
-    <p class="article-more-link">
-      <a class="article-more-a" href="/2022/09/17/RPA%E4%B8%8E%E6%95%8F%E6%8D%B7%E5%BC%80%E5%8F%91%E6%96%B9%E6%B3%95/">展开全文 >></a>
-    </p>
-    
-
-    
-    <div class="clearfix"></div>
-  </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-国家电网某超高压变电公司RPA案例分享" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-  
-  
-    <h1 itemprop="name">
-	
-	  <a class="article-title" href="/2022/09/11/%E5%9B%BD%E5%AE%B6%E7%94%B5%E7%BD%91%E6%9F%90%E8%B6%85%E9%AB%98%E5%8E%8B%E5%8F%98%E7%94%B5%E5%85%AC%E5%8F%B8RPA%E6%A1%88%E4%BE%8B%E5%88%86%E4%BA%AB/" target="_blank">国家电网某超高压变电公司RPA案例分享</a>
-  
-    </h1>
-  
-
-
-  
-  
-<a href="/2022/09/11/%E5%9B%BD%E5%AE%B6%E7%94%B5%E7%BD%91%E6%9F%90%E8%B6%85%E9%AB%98%E5%8E%8B%E5%8F%98%E7%94%B5%E5%85%AC%E5%8F%B8RPA%E6%A1%88%E4%BE%8B%E5%88%86%E4%BA%AB/" class="archive-article-date">
-        <time datetime="2022-09-11T09:02:31.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-09-11</time>
-</a>
-
-  
-  
-    
-
-  
-  </header>
-  
-  <div class="article-entry" itemprop="articleBody">
-    
-    <p>“传统人工核对处理1000笔业务需耗时约33小时，而‘机器人员工’仅需2小时即可自动完成付款记录稽核，效率提升了16倍！”国网某超高压变电公司财务负责人，亲眼见证了RPA机器人快速高效完成资金支付配比工作后，给予了RPA项目工作成果极积极的肯定。</p>
-<p>超高压变电公司紧盯公司发展热点、痛点、难点问题，利用RPA机器人着手打造管理现代化，人尽其才、物尽其用，人员分工合理的智能型班组。为推动RPA团队成员迅速成长，该公司组织业务管理部门和生产单位的业务骨干36人集体学习RPA，组成公司RPA兴趣小组，梳理完成关于生产、财务、人资、党建等RPA工作流程12条。</p>
-<p>有了学习做基础，该公司找准日常工作和专项工作需求，结合该公司业务痛点，开发自动化流程工具，自主研发运维、人资、财务等专业RPA机器人。</p>
-    
-    <a class="article-more-a" href="/2022/09/11/%E5%9B%BD%E5%AE%B6%E7%94%B5%E7%BD%91%E6%9F%90%E8%B6%85%E9%AB%98%E5%8E%8B%E5%8F%98%E7%94%B5%E5%85%AC%E5%8F%B8RPA%E6%A1%88%E4%BE%8B%E5%88%86%E4%BA%AB/#more">more >></a>
-    
     
 
     
@@ -445,16 +345,85 @@
     
 
     
-    <p class="article-more-link">
-      <a class="article-more-a" href="/2022/09/11/%E5%9B%BD%E5%AE%B6%E7%94%B5%E7%BD%91%E6%9F%90%E8%B6%85%E9%AB%98%E5%8E%8B%E5%8F%98%E7%94%B5%E5%85%AC%E5%8F%B8RPA%E6%A1%88%E4%BE%8B%E5%88%86%E4%BA%AB/">展开全文 >></a>
-    </p>
+
     
+    
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <!-- <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a> -->
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+     <!-- <img src="//pan.baidu.com/share/qrcode?url=https://longchao012.github.io/2022/09/17/RPA%E4%B8%8E%E6%95%8F%E6%8D%B7%E5%BC%80%E5%8F%91%E6%96%B9%E6%B3%95/" alt="微信分享二维码"> -->
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
 
     
     <div class="clearfix"></div>
   </div>
   </div>
 </article>
+
+
+<nav id="article-nav">
+  
+    <a href="/2022/09/18/MySQL%E4%B8%BB%E4%BB%8E%E6%9C%8D%E5%8A%A1%E7%9A%84%E9%85%8D%E7%BD%AE%E5%8F%8A%E5%85%B6%E4%B8%AD%E5%8F%AF%E8%83%BD%E4%BC%9A%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          MySQL主从服务的配置及其中可能会遇到的问题
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2022/09/11/%E5%9B%BD%E5%AE%B6%E7%94%B5%E7%BD%91%E6%9F%90%E8%B6%85%E9%AB%98%E5%8E%8B%E5%8F%98%E7%94%B5%E5%85%AC%E5%8F%B8RPA%E6%A1%88%E4%BE%8B%E5%88%86%E4%BA%AB/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">国家电网某超高压变电公司RPA案例分享</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -475,632 +444,14 @@
 
 
 
-  
-    <article id="post-RPA流程如何选择--四个考虑的基本点" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-  
-  
-    <h1 itemprop="name">
-	
-	  <a class="article-title" href="/2022/09/10/RPA%E6%B5%81%E7%A8%8B%E5%A6%82%E4%BD%95%E9%80%89%E6%8B%A9--%E5%9B%9B%E4%B8%AA%E8%80%83%E8%99%91%E7%9A%84%E5%9F%BA%E6%9C%AC%E7%82%B9/" target="_blank">RPA流程如何选择--四个考虑的基本点</a>
-  
-    </h1>
-  
 
 
-  
-  
-<a href="/2022/09/10/RPA%E6%B5%81%E7%A8%8B%E5%A6%82%E4%BD%95%E9%80%89%E6%8B%A9--%E5%9B%9B%E4%B8%AA%E8%80%83%E8%99%91%E7%9A%84%E5%9F%BA%E6%9C%AC%E7%82%B9/" class="archive-article-date">
-        <time datetime="2022-09-10T08:01:57.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-09-10</time>
-</a>
 
-  
-  
-    
 
-  
-  </header>
-  
-  <div class="article-entry" itemprop="articleBody">
-    
-    <p>RPA 成功的最关键决定因素之一就是是否选择了合适的用例场景。而  RPA 项目的最大挑战是识别适合RPA的业务流程并确定其优先级，因为它们需要业务流程知识和技术专长。CIO、CTO应该用稳定性、可预测性、范围和复杂性参数测试他们的用例，以确定和选择最适合 RPA 的用例。<br>以下是我在给客户做场景分析和业务流程评估时所用到的一些分析角度，以供大家参考。</p>
-    
-    <a class="article-more-a" href="/2022/09/10/RPA%E6%B5%81%E7%A8%8B%E5%A6%82%E4%BD%95%E9%80%89%E6%8B%A9--%E5%9B%9B%E4%B8%AA%E8%80%83%E8%99%91%E7%9A%84%E5%9F%BA%E6%9C%AC%E7%82%B9/#more">more >></a>
-    
-    
 
-    
 
-    
 
-  </div>
-  <div class="article-info article-info-index">
-    
-    
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">RPA办公自动化</a>
-        		</li>
-      		
-		</ul>
-	</div>
 
-    
-
-    
-    <p class="article-more-link">
-      <a class="article-more-a" href="/2022/09/10/RPA%E6%B5%81%E7%A8%8B%E5%A6%82%E4%BD%95%E9%80%89%E6%8B%A9--%E5%9B%9B%E4%B8%AA%E8%80%83%E8%99%91%E7%9A%84%E5%9F%BA%E6%9C%AC%E7%82%B9/">展开全文 >></a>
-    </p>
-    
-
-    
-    <div class="clearfix"></div>
-  </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-常见的RPA项目失败经验及其总结" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-  
-  
-    <h1 itemprop="name">
-	
-	  <a class="article-title" href="/2022/09/03/%E5%B8%B8%E8%A7%81%E7%9A%84RPA%E9%A1%B9%E7%9B%AE%E5%A4%B1%E8%B4%A5%E7%BB%8F%E9%AA%8C%E5%8F%8A%E5%85%B6%E6%80%BB%E7%BB%93/" target="_blank">常见的RPA项目错误及其教训</a>
-  
-    </h1>
-  
-
-
-  
-  
-<a href="/2022/09/03/%E5%B8%B8%E8%A7%81%E7%9A%84RPA%E9%A1%B9%E7%9B%AE%E5%A4%B1%E8%B4%A5%E7%BB%8F%E9%AA%8C%E5%8F%8A%E5%85%B6%E6%80%BB%E7%BB%93/" class="archive-article-date">
-        <time datetime="2022-09-03T06:10:47.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-09-03</time>
-</a>
-
-  
-  
-    
-
-  
-  </header>
-  
-  <div class="article-entry" itemprop="articleBody">
-    
-    <p>很多公司的领导听说了RPA办公自动化(RPA)的功能与效果之后，就尝试去使用，并以为他们团队肯定能够解决编写与执行过程中遇到的问题。虽然现在看来这种想法是错误的，但确实有人这样做了。<br>RPA通常被说为一种快速、简单和用户友好地利用自动化的方法，即使没有编码经验。从理论上讲，机器人所需要做的就是模拟人的操作过程和步骤的任务。但在实践中，但是给它一个看似简单的流程运行过程中往往在很多方面都出错了。结果就是尝试了使用过RPA，但失败了，然后很自然的将其搁置，然后工作又回到到之前的旧的手动流程。</p>
-<p>下面，让我们来聊聊一些常见的RPA项目经验和其所能带来的增长。</p>
-    
-    <a class="article-more-a" href="/2022/09/03/%E5%B8%B8%E8%A7%81%E7%9A%84RPA%E9%A1%B9%E7%9B%AE%E5%A4%B1%E8%B4%A5%E7%BB%8F%E9%AA%8C%E5%8F%8A%E5%85%B6%E6%80%BB%E7%BB%93/#more">more >></a>
-    
-    
-
-    
-
-    
-
-  </div>
-  <div class="article-info article-info-index">
-    
-    
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">RPA办公自动化</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-    
-
-    
-    <p class="article-more-link">
-      <a class="article-more-a" href="/2022/09/03/%E5%B8%B8%E8%A7%81%E7%9A%84RPA%E9%A1%B9%E7%9B%AE%E5%A4%B1%E8%B4%A5%E7%BB%8F%E9%AA%8C%E5%8F%8A%E5%85%B6%E6%80%BB%E7%BB%93/">展开全文 >></a>
-    </p>
-    
-
-    
-    <div class="clearfix"></div>
-  </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-Python入门的19个基础语法" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-  
-  
-    <h1 itemprop="name">
-	
-	  <a class="article-title" href="/2022/09/02/Python%E5%85%A5%E9%97%A8%E7%9A%8419%E4%B8%AA%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/" target="_blank">Python入门的19个基础语法</a>
-  
-    </h1>
-  
-
-
-  
-  
-<a href="/2022/09/02/Python%E5%85%A5%E9%97%A8%E7%9A%8419%E4%B8%AA%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/" class="archive-article-date">
-        <time datetime="2022-09-02T03:40:06.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-09-02</time>
-</a>
-
-  
-  
-    
-
-  
-  </header>
-  
-  <div class="article-entry" itemprop="articleBody">
-    
-    <p>最近堂妹要学Python给她写了些Python基础的语法入门，在此做个总结记录。<br>Python简单易学，但又博大精深。<br>许多人号称精通Python，却不会写Pythonic的代码，对很多常用包的使用也并不熟悉。<br>ps:Pythonic是指代码遵循Python社区的惯例，并以其预期的方式使用该语言。Pythonic的代码不仅仅是语法正确，而是充分利用Python语言的特性来产生清晰、简洁和可维护的代码 。</p>
-<p>学海无涯，我们先来了解一些Python中最基本的内容。</p>
-    
-    <a class="article-more-a" href="/2022/09/02/Python%E5%85%A5%E9%97%A8%E7%9A%8419%E4%B8%AA%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/#more">more >></a>
-    
-    
-
-    
-
-    
-
-  </div>
-  <div class="article-info article-info-index">
-    
-    
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Python</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-    
-
-    
-    <p class="article-more-link">
-      <a class="article-more-a" href="/2022/09/02/Python%E5%85%A5%E9%97%A8%E7%9A%8419%E4%B8%AA%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/">展开全文 >></a>
-    </p>
-    
-
-    
-    <div class="clearfix"></div>
-  </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-几个新的常用Python库，旧的可以淘汰了" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-  
-  
-    <h1 itemprop="name">
-	
-	  <a class="article-title" href="/2022/08/31/%E5%87%A0%E4%B8%AA%E6%96%B0%E7%9A%84%E5%B8%B8%E7%94%A8Python%E5%BA%93%EF%BC%8C%E6%97%A7%E7%9A%84%E5%8F%AF%E4%BB%A5%E6%B7%98%E6%B1%B0%E4%BA%86/" target="_blank">几个新的常用Python库，旧的可以淘汰了</a>
-  
-    </h1>
-  
-
-
-  
-  
-<a href="/2022/08/31/%E5%87%A0%E4%B8%AA%E6%96%B0%E7%9A%84%E5%B8%B8%E7%94%A8Python%E5%BA%93%EF%BC%8C%E6%97%A7%E7%9A%84%E5%8F%AF%E4%BB%A5%E6%B7%98%E6%B1%B0%E4%BA%86/" class="archive-article-date">
-        <time datetime="2022-08-31T02:56:14.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-08-31</time>
-</a>
-
-  
-  
-    
-
-  
-  </header>
-  
-  <div class="article-entry" itemprop="articleBody">
-    
-    <p>随着每个 Python 版本的发布，都会添加新模块，并引入新的更好的做事方式，虽然我们都习惯了使用好的旧 Python 库和某些做事方式，但现在也时候升级并利用新的和改进的模块及其特性了。</p>
-    
-    <a class="article-more-a" href="/2022/08/31/%E5%87%A0%E4%B8%AA%E6%96%B0%E7%9A%84%E5%B8%B8%E7%94%A8Python%E5%BA%93%EF%BC%8C%E6%97%A7%E7%9A%84%E5%8F%AF%E4%BB%A5%E6%B7%98%E6%B1%B0%E4%BA%86/#more">more >></a>
-    
-    
-
-    
-
-    
-
-  </div>
-  <div class="article-info article-info-index">
-    
-    
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Python</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-    
-
-    
-    <p class="article-more-link">
-      <a class="article-more-a" href="/2022/08/31/%E5%87%A0%E4%B8%AA%E6%96%B0%E7%9A%84%E5%B8%B8%E7%94%A8Python%E5%BA%93%EF%BC%8C%E6%97%A7%E7%9A%84%E5%8F%AF%E4%BB%A5%E6%B7%98%E6%B1%B0%E4%BA%86/">展开全文 >></a>
-    </p>
-    
-
-    
-    <div class="clearfix"></div>
-  </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-Python中常用的 pip 命令" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-  
-  
-    <h1 itemprop="name">
-	
-	  <a class="article-title" href="/2022/08/28/Python%E4%B8%AD%E5%B8%B8%E7%94%A8%E7%9A%84%20pip%20%E5%91%BD%E4%BB%A4/" target="_blank">Python中常用的 pip 命令</a>
-  
-    </h1>
-  
-
-
-  
-  
-<a href="/2022/08/28/Python%E4%B8%AD%E5%B8%B8%E7%94%A8%E7%9A%84%20pip%20%E5%91%BD%E4%BB%A4/" class="archive-article-date">
-        <time datetime="2022-08-28T02:30:39.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-08-28</time>
-</a>
-
-  
-  
-    
-
-  
-  </header>
-  
-  <div class="article-entry" itemprop="articleBody">
-    
-    <p>相信对于大多数熟悉Python的人来说，一定都听说并且使用过pip这个工具，但是对它的了解可能还不一定是非常的透彻，今天就来为大家介绍几个使用pip的小技巧，相信对大家以后管理和使用Python当中的标准库会有帮助。</p>
-    
-    <a class="article-more-a" href="/2022/08/28/Python%E4%B8%AD%E5%B8%B8%E7%94%A8%E7%9A%84%20pip%20%E5%91%BD%E4%BB%A4/#more">more >></a>
-    
-    
-
-    
-
-    
-
-  </div>
-  <div class="article-info article-info-index">
-    
-    
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Python</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-    
-
-    
-    <p class="article-more-link">
-      <a class="article-more-a" href="/2022/08/28/Python%E4%B8%AD%E5%B8%B8%E7%94%A8%E7%9A%84%20pip%20%E5%91%BD%E4%BB%A4/">展开全文 >></a>
-    </p>
-    
-
-    
-    <div class="clearfix"></div>
-  </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-几种好用的数据迁移工具" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-  
-  
-    <h1 itemprop="name">
-	
-	  <a class="article-title" href="/2022/08/26/%E5%87%A0%E7%A7%8D%E5%A5%BD%E7%94%A8%E7%9A%84%E6%95%B0%E6%8D%AE%E8%BF%81%E7%A7%BB%E5%B7%A5%E5%85%B7/" target="_blank">几种好用的数据迁移工具</a>
-  
-    </h1>
-  
-
-
-  
-  
-<a href="/2022/08/26/%E5%87%A0%E7%A7%8D%E5%A5%BD%E7%94%A8%E7%9A%84%E6%95%B0%E6%8D%AE%E8%BF%81%E7%A7%BB%E5%B7%A5%E5%85%B7/" class="archive-article-date">
-        <time datetime="2022-08-26T01:15:01.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-08-26</time>
-</a>
-
-  
-  
-    
-
-  
-  </header>
-  
-  <div class="article-entry" itemprop="articleBody">
-    
-    <p>市面上有那么多的ETL数据迁移工具，我们可以用哪些？</p>
-<p>ETL(是Extract-Transform-Load的缩写，即数据抽取、转换、装载的过程)，对于企业应用来说，我们经常会遇到各种数据的处理、转换、迁移的场景。</p>
-<p>今天特地给大家汇总了一些目前市面上比较常用的ETL数据迁移工具，希望对大家有所帮助。</p>
-    
-    <a class="article-more-a" href="/2022/08/26/%E5%87%A0%E7%A7%8D%E5%A5%BD%E7%94%A8%E7%9A%84%E6%95%B0%E6%8D%AE%E8%BF%81%E7%A7%BB%E5%B7%A5%E5%85%B7/#more">more >></a>
-    
-    
-
-    
-
-    
-
-  </div>
-  <div class="article-info article-info-index">
-    
-    
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">数据迁移</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-    
-
-    
-    <p class="article-more-link">
-      <a class="article-more-a" href="/2022/08/26/%E5%87%A0%E7%A7%8D%E5%A5%BD%E7%94%A8%E7%9A%84%E6%95%B0%E6%8D%AE%E8%BF%81%E7%A7%BB%E5%B7%A5%E5%85%B7/">展开全文 >></a>
-    </p>
-    
-
-    
-    <div class="clearfix"></div>
-  </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-小案例：制作《数据流图》与《业务流程图》" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-  
-  
-    <h1 itemprop="name">
-	
-	  <a class="article-title" href="/2022/08/24/%E5%B0%8F%E6%A1%88%E4%BE%8B%EF%BC%9A%E5%88%B6%E4%BD%9C%E3%80%8A%E6%95%B0%E6%8D%AE%E6%B5%81%E5%9B%BE%E3%80%8B%E4%B8%8E%E3%80%8A%E4%B8%9A%E5%8A%A1%E6%B5%81%E7%A8%8B%E5%9B%BE%E3%80%8B/" target="_blank">小案例：制作《数据流图》与《业务流程图》</a>
-  
-    </h1>
-  
-
-
-  
-  
-<a href="/2022/08/24/%E5%B0%8F%E6%A1%88%E4%BE%8B%EF%BC%9A%E5%88%B6%E4%BD%9C%E3%80%8A%E6%95%B0%E6%8D%AE%E6%B5%81%E5%9B%BE%E3%80%8B%E4%B8%8E%E3%80%8A%E4%B8%9A%E5%8A%A1%E6%B5%81%E7%A8%8B%E5%9B%BE%E3%80%8B/" class="archive-article-date">
-        <time datetime="2022-08-24T03:53:12.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-08-24</time>
-</a>
-
-  
-  
-    
-
-  
-  </header>
-  
-  <div class="article-entry" itemprop="articleBody">
-    
-    <p>数据流图（Data Flow Diagram, DFD）是一种便于用户理解和分析系统数据流程的图形工具，他摆脱了系统和具体内容，精确的在逻辑上描述系统的功能、输入、输出和数据存储等，是系统逻辑模型的重要组成部分。</p>
-    
-    <a class="article-more-a" href="/2022/08/24/%E5%B0%8F%E6%A1%88%E4%BE%8B%EF%BC%9A%E5%88%B6%E4%BD%9C%E3%80%8A%E6%95%B0%E6%8D%AE%E6%B5%81%E5%9B%BE%E3%80%8B%E4%B8%8E%E3%80%8A%E4%B8%9A%E5%8A%A1%E6%B5%81%E7%A8%8B%E5%9B%BE%E3%80%8B/#more">more >></a>
-    
-    
-
-    
-
-    
-
-  </div>
-  <div class="article-info article-info-index">
-    
-    
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">UML</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-    
-
-    
-    <p class="article-more-link">
-      <a class="article-more-a" href="/2022/08/24/%E5%B0%8F%E6%A1%88%E4%BE%8B%EF%BC%9A%E5%88%B6%E4%BD%9C%E3%80%8A%E6%95%B0%E6%8D%AE%E6%B5%81%E5%9B%BE%E3%80%8B%E4%B8%8E%E3%80%8A%E4%B8%9A%E5%8A%A1%E6%B5%81%E7%A8%8B%E5%9B%BE%E3%80%8B/">展开全文 >></a>
-    </p>
-    
-
-    
-    <div class="clearfix"></div>
-  </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-  
-    <nav id="page-nav">
-      <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next &amp;raquo;</a>
-    </nav>
-  
 
 
           </div>
@@ -1140,8 +491,8 @@
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: true,
-		isPost: false,
+		isHome: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
